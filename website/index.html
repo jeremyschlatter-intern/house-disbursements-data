@@ -224,7 +224,7 @@
             <h3 style="margin-top:1.5rem">Complete Dataset</h3>
             <div class="download-card" style="margin-bottom:2rem">
                 <div class="info"><h4>All Disbursements (2009&ndash;2025)</h4><p id="master-export-info">7M+ records, ~1.2 GB CSV</p></div>
-                <a href="https://github.com/jeremyschlatter-intern/house-disbursements-data/releases" class="btn" target="_blank">Download from GitHub</a>
+                <a href="https://github.com/jeremyschlatter-intern/house-disbursements-data/releases/tag/v1.0.0" class="btn" target="_blank">Download from GitHub</a>
             </div>
             <h3>By Year</h3>
             <div class="download-grid" id="download-grid"><div class="loading" style="text-align:center;padding:2rem;color:var(--gray-500)">Loading...</div></div>
@@ -284,7 +284,7 @@
                 </ul>
 
                 <h3>Technical Details</h3>
-                <p>The pipeline downloads all available CSVs from house.gov, normalizes varying column formats into a unified schema, stores everything in a SQLite database, and generates the JSON data files and CSV exports served by this website. Source code available on <a href="https://github.com/palisade-research/house-disbursements" target="_blank">GitHub</a>.</p>
+                <p>The pipeline downloads all available CSVs from house.gov, normalizes varying column formats into a unified schema, stores everything in a SQLite database, and generates the JSON data files and CSV exports served by this website. Source code available on <a href="https://github.com/jeremyschlatter-intern/house-disbursements-data" target="_blank">GitHub</a>.</p>
             </div>
         </div>
     </main>
@@ -647,7 +647,7 @@ async function initDownload() {
     grid.innerHTML = exports.filter(e => e.records > 1000).sort((a, b) => b.year - a.year).map(e => `
         <div class="download-card">
             <div class="info"><h4>${e.year}</h4><p>${fmtInt(e.records)} records &middot; ${e.size_mb} MB</p></div>
-            <a href="https://github.com/jeremyschlatter-intern/house-disbursements-data/releases" class="btn btn-outline btn-sm" target="_blank">CSV</a>
+            <a href="https://github.com/jeremyschlatter-intern/house-disbursements-data/releases/tag/v1.0.0" class="btn btn-outline btn-sm" target="_blank">CSV</a>
         </div>
     `).join('');
 }

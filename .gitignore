@@ -2,3 +2,5 @@ data/house_csvs_raw/
 data/house_disbursements.db
 samples/
 propublica-disbursements/
+website/exports/
+data/stats.json

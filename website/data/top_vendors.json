@@ -1,0 +1,1402 @@
+[
+  {
+    "name": "UNITED STATES POSTAL SERVICE",
+    "total": 162747516.49,
+    "transactions": 63638,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "LEIDOS DIGITAL SOLUTIONS INC",
+    "total": 133935575.3,
+    "transactions": 41379,
+    "first_seen": "2016-07-05",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "NOVITEX GOVERNMENT SOLUTIONS LLC",
+    "total": 100721895.23,
+    "transactions": 524,
+    "first_seen": "2016-02-10",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "CITIBANK GOV CARD SERVICE",
+    "total": 99212904.54,
+    "transactions": 295928,
+    "first_seen": "",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "VERIZON WIRELESS",
+    "total": 67290185.43,
+    "transactions": 17716,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "INSIGHT PUBLIC SECTOR INC",
+    "total": 49888644.26,
+    "transactions": 274,
+    "first_seen": "2017-10-10",
+    "last_seen": "2025-12-23"
+  },
+  {
+    "name": "CITIBANK",
+    "total": 45016719.76,
+    "transactions": 156511,
+    "first_seen": "2016-01-12",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "TETRAD DIGITAL INTEGRITY LLC",
+    "total": 38987533.45,
+    "transactions": 235,
+    "first_seen": "2016-12-06",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "US DEPARTMENT OF LABOR",
+    "total": 35226696.39,
+    "transactions": 55,
+    "first_seen": "2016-01-06",
+    "last_seen": "2025-09-25"
+  },
+  {
+    "name": "HOUSECALL LLC",
+    "total": 30949912.83,
+    "transactions": 11463,
+    "first_seen": "2017-04-04",
+    "last_seen": "2025-12-16"
+  },
+  {
+    "name": "IMPRES TECHNOLOGY SOLUTIONS INC",
+    "total": 30425285.82,
+    "transactions": 281,
+    "first_seen": "2017-02-03",
+    "last_seen": "2025-12-29"
+  },
+  {
+    "name": "CDW GOVERNMENT LLC",
+    "total": 29909367.07,
+    "transactions": 8653,
+    "first_seen": "2019-01-03",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "DEPT OF EDUCATION/NELNET",
+    "total": 28670146.96,
+    "transactions": 42419,
+    "first_seen": "",
+    "last_seen": "2025-12-16"
+  },
+  {
+    "name": "DEPT OF EDUC VIA FEDLOAN SVC",
+    "total": 28235680.84,
+    "transactions": 45336,
+    "first_seen": "2016-01-19",
+    "last_seen": "2023-02-16"
+  },
+  {
+    "name": "GSA PUBLIC BUILDING SERVICE",
+    "total": 27643198.75,
+    "transactions": 5250,
+    "first_seen": "2016-01-20",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "ID TECHNOLOGIES LLC",
+    "total": 27552259.03,
+    "transactions": 299,
+    "first_seen": "2020-07-30",
+    "last_seen": "2025-12-05"
+  },
+  {
+    "name": "AMPLIFY INC",
+    "total": 26325682.37,
+    "transactions": 4599,
+    "first_seen": "2019-03-14",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "VERIZON",
+    "total": 26035343.09,
+    "transactions": 19435,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "WOODSIDE TEMPORARIES INC",
+    "total": 25924117.06,
+    "transactions": 2606,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "MG",
+    "total": 25202652.34,
+    "transactions": 308,
+    "first_seen": "2017-08-14",
+    "last_seen": "2025-12-16"
+  },
+  {
+    "name": "FIRESIDE21",
+    "total": 22484701.03,
+    "transactions": 15714,
+    "first_seen": "2016-01-04",
+    "last_seen": "2022-08-23"
+  },
+  {
+    "name": "AT&T",
+    "total": 21584579.3,
+    "transactions": 11066,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "DEPT OF EDUCATION/GREAT LAKES - DOE",
+    "total": 21435167.65,
+    "transactions": 35270,
+    "first_seen": "2016-07-05",
+    "last_seen": "2023-05-16"
+  },
+  {
+    "name": "GUIDEPOINT SECURITY LLC",
+    "total": 20810201.75,
+    "transactions": 155,
+    "first_seen": "2016-08-15",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "INTELLIGENT DECISIONS INC",
+    "total": 20325937.06,
+    "transactions": 192,
+    "first_seen": "2016-01-12",
+    "last_seen": "2020-04-08"
+  },
+  {
+    "name": "CDW GOVERNMENT INC. C/O ISM IN",
+    "total": 20276514.83,
+    "transactions": 4983,
+    "first_seen": "2016-01-04",
+    "last_seen": "2022-03-17"
+  },
+  {
+    "name": "ADVANCE DIGITAL SYSTEMS INC",
+    "total": 19477153.93,
+    "transactions": 1159,
+    "first_seen": "2016-01-07",
+    "last_seen": "2025-12-26"
+  },
+  {
+    "name": "DFAS CLEVELAND",
+    "total": 19338626.85,
+    "transactions": 41,
+    "first_seen": "2019-05-10",
+    "last_seen": "2025-09-17"
+  },
+  {
+    "name": "POLITICO LLC",
+    "total": 19260933.5,
+    "transactions": 1583,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "GENERAL COMMUNICATIONS INC",
+    "total": 19045003.62,
+    "transactions": 751,
+    "first_seen": "2016-03-16",
+    "last_seen": "2025-11-21"
+  },
+  {
+    "name": "GENERAL DYNAMICS INFORMATION TECH INC",
+    "total": 18603610.16,
+    "transactions": 540,
+    "first_seen": "2018-01-09",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "AVAYA",
+    "total": 18171383.31,
+    "transactions": 704,
+    "first_seen": "2016-01-14",
+    "last_seen": "2024-12-03"
+  },
+  {
+    "name": "CTG FEDERAL LLC",
+    "total": 18106518.49,
+    "transactions": 130,
+    "first_seen": "2022-11-14",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "FIRESIDE 21 LLC",
+    "total": 17548662.79,
+    "transactions": 9574,
+    "first_seen": "2021-07-02",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "CAPITOL FRANKING GROUP LLC",
+    "total": 17271334.54,
+    "transactions": 1429,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "THE FRANKING GROUP",
+    "total": 16957012.76,
+    "transactions": 1644,
+    "first_seen": "2016-01-11",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "DEPT OF EDUCATION/MOHELA",
+    "total": 16904114.7,
+    "transactions": 23554,
+    "first_seen": "2016-01-19",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "HERMAN MILLER INC",
+    "total": 16573849.46,
+    "transactions": 951,
+    "first_seen": "2016-01-22",
+    "last_seen": "2025-11-18"
+  },
+  {
+    "name": "THE AEJ GROUP LLC",
+    "total": 16274414.11,
+    "transactions": 3309,
+    "first_seen": "2021-11-12",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "AVAYA FEDERAL SOLUTIONS INC",
+    "total": 15755256.47,
+    "transactions": 390,
+    "first_seen": "2016-01-14",
+    "last_seen": "2025-06-30"
+  },
+  {
+    "name": "AT&T CORP",
+    "total": 14947463.25,
+    "transactions": 8520,
+    "first_seen": "2019-07-01",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "IM",
+    "total": 14791664.73,
+    "transactions": 412,
+    "first_seen": "2020-01-17",
+    "last_seen": "2025-12-24"
+  },
+  {
+    "name": "GOVCONNECTION INC",
+    "total": 14697784.99,
+    "transactions": 1588,
+    "first_seen": "2016-11-09",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "COMCAST",
+    "total": 14683983.12,
+    "transactions": 16069,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "STERLING COMPUTERS CORPORATION",
+    "total": 14354410.59,
+    "transactions": 575,
+    "first_seen": "2016-06-23",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "AT&T WIRELESS",
+    "total": 14015091.92,
+    "transactions": 127,
+    "first_seen": "2016-01-15",
+    "last_seen": "2025-12-29"
+  },
+  {
+    "name": "BLACKWOOD ASSOCIATES INC",
+    "total": 13983831.77,
+    "transactions": 151,
+    "first_seen": "2016-01-14",
+    "last_seen": "2025-12-04"
+  },
+  {
+    "name": "XCENTIAL CORPORATION",
+    "total": 13518846.83,
+    "transactions": 273,
+    "first_seen": "2017-08-30",
+    "last_seen": "2025-12-05"
+  },
+  {
+    "name": "COPPER RIVER INFORMATION TECHNOLOGY LLC",
+    "total": 13303802.56,
+    "transactions": 152,
+    "first_seen": "2017-08-28",
+    "last_seen": "2023-09-19"
+  },
+  {
+    "name": "DEPT OF EDUCATION/NAVIENT",
+    "total": 13235617.25,
+    "transactions": 23661,
+    "first_seen": "2016-01-11",
+    "last_seen": "2021-09-16"
+  },
+  {
+    "name": "BGOV LLC",
+    "total": 13192140.71,
+    "transactions": 1705,
+    "first_seen": "2018-01-21",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "INTERSTATE GROUP HOLDINGS INC",
+    "total": 12809323.25,
+    "transactions": 491,
+    "first_seen": "2016-02-18",
+    "last_seen": "2025-09-04"
+  },
+  {
+    "name": "ORACLE AMERICA INC",
+    "total": 12574961.14,
+    "transactions": 308,
+    "first_seen": "2016-01-07",
+    "last_seen": "2025-12-02"
+  },
+  {
+    "name": "INDIGOVERN LLC",
+    "total": 12330835.57,
+    "transactions": 4733,
+    "first_seen": "2018-03-29",
+    "last_seen": "2025-12-16"
+  },
+  {
+    "name": "CARAHSOFT TECHNOLOGY CORPORATION",
+    "total": 12144327.81,
+    "transactions": 408,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-11"
+  },
+  {
+    "name": "COMPROBASE INC",
+    "total": 12065731.99,
+    "transactions": 761,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-29"
+  },
+  {
+    "name": "IRON VINE SECURITY LLC",
+    "total": 12011307.4,
+    "transactions": 75,
+    "first_seen": "2020-10-26",
+    "last_seen": "2025-09-19"
+  },
+  {
+    "name": "CONNECTION",
+    "total": 11901760.57,
+    "transactions": 3614,
+    "first_seen": "2016-07-01",
+    "last_seen": "2023-09-25"
+  },
+  {
+    "name": "ICONSTITUENT LLC",
+    "total": 11794796.54,
+    "transactions": 6380,
+    "first_seen": "2016-01-04",
+    "last_seen": "2022-01-06"
+  },
+  {
+    "name": "DELL MARKETING LP",
+    "total": 11577682.29,
+    "transactions": 688,
+    "first_seen": "2016-01-19",
+    "last_seen": "2024-12-31"
+  },
+  {
+    "name": "DELL USA LP",
+    "total": 11483943.26,
+    "transactions": 935,
+    "first_seen": "2018-02-20",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "MAD SECURITY",
+    "total": 11445374.73,
+    "transactions": 67,
+    "first_seen": "2019-07-05",
+    "last_seen": "2024-02-01"
+  },
+  {
+    "name": "FRANKLIN COVEY CLIENT SALES INC",
+    "total": 11417752.71,
+    "transactions": 386,
+    "first_seen": "2018-06-04",
+    "last_seen": "2025-11-18"
+  },
+  {
+    "name": "DEPT OF EDUCATION/AIDVANTAGE",
+    "total": 10837479.97,
+    "transactions": 14548,
+    "first_seen": "2021-10-12",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "K2 AUDIO LLC",
+    "total": 10763696.85,
+    "transactions": 777,
+    "first_seen": "2016-01-22",
+    "last_seen": "2025-06-23"
+  },
+  {
+    "name": "ECS FEDERAL LLC",
+    "total": 10029707.14,
+    "transactions": 58,
+    "first_seen": "2019-02-12",
+    "last_seen": "2025-12-16"
+  },
+  {
+    "name": "DEPT OF EDUCATION/EDFINANCIAL",
+    "total": 9525740.38,
+    "transactions": 12904,
+    "first_seen": "2016-01-19",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "CONVERGENZ LLC",
+    "total": 9121019.74,
+    "transactions": 896,
+    "first_seen": "2019-10-15",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "UNITED STATES CAPITOL POLICE",
+    "total": 9090805.93,
+    "transactions": 256,
+    "first_seen": "2017-09-27",
+    "last_seen": "2025-09-17"
+  },
+  {
+    "name": "STORAGEHAWK",
+    "total": 9048175.63,
+    "transactions": 327,
+    "first_seen": "2016-01-08",
+    "last_seen": "2025-11-26"
+  },
+  {
+    "name": "CQ ROLL CALL INC",
+    "total": 8844619.43,
+    "transactions": 745,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-06-13"
+  },
+  {
+    "name": "IMPACTOFFICE",
+    "total": 8023803.17,
+    "transactions": 23504,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "US SENATE",
+    "total": 7853822.25,
+    "transactions": 33,
+    "first_seen": "2016-01-26",
+    "last_seen": "2025-05-15"
+  },
+  {
+    "name": "SRA INTERNATIONAL INC",
+    "total": 7465318.83,
+    "transactions": 206,
+    "first_seen": "2016-01-21",
+    "last_seen": "2023-09-30"
+  },
+  {
+    "name": "RADGOV INC",
+    "total": 7346934.34,
+    "transactions": 617,
+    "first_seen": "2016-01-19",
+    "last_seen": "2025-12-18"
+  },
+  {
+    "name": "CHIEF OF NAVAL PERSONNEL",
+    "total": 7096215.07,
+    "transactions": 13,
+    "first_seen": "2016-01-28",
+    "last_seen": "2019-02-26"
+  },
+  {
+    "name": "DISTRICT MOVING COMPANIES INC",
+    "total": 7084036.21,
+    "transactions": 1493,
+    "first_seen": "2016-01-21",
+    "last_seen": "2025-12-19"
+  },
+  {
+    "name": "JASPER SEATING COMPANY INC",
+    "total": 7035519.03,
+    "transactions": 287,
+    "first_seen": "2016-01-22",
+    "last_seen": "2025-08-29"
+  },
+  {
+    "name": "SHARP BUSINESS SYSTEMS",
+    "total": 6730426.67,
+    "transactions": 2013,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-18"
+  },
+  {
+    "name": "BENJAMIN OFFICE SUPPLY &  SERVICES INC",
+    "total": 6723975.54,
+    "transactions": 4756,
+    "first_seen": "2021-06-10",
+    "last_seen": "2025-09-29"
+  },
+  {
+    "name": "KEENLOGIC",
+    "total": 6707253.69,
+    "transactions": 605,
+    "first_seen": "2018-10-31",
+    "last_seen": "2025-12-29"
+  },
+  {
+    "name": "ACCURATE WORD LLC",
+    "total": 6609762.49,
+    "transactions": 29125,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "REDD SOLUTIONS LLC",
+    "total": 6544016.9,
+    "transactions": 380,
+    "first_seen": "2017-12-11",
+    "last_seen": "2025-08-25"
+  },
+  {
+    "name": "DIGITAL VIDEO GROUP INC",
+    "total": 6400158.83,
+    "transactions": 286,
+    "first_seen": "2016-06-09",
+    "last_seen": "2025-12-09"
+  },
+  {
+    "name": "TVAR SOLUTIONS LLC",
+    "total": 6368910.94,
+    "transactions": 79,
+    "first_seen": "2016-01-29",
+    "last_seen": "2024-12-27"
+  },
+  {
+    "name": "ANNIN FLAG COMPANY",
+    "total": 6106130.7,
+    "transactions": 456,
+    "first_seen": "2018-10-02",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "PATRIOT CONTACT INC",
+    "total": 6000043.26,
+    "transactions": 495,
+    "first_seen": "2016-01-06",
+    "last_seen": "2025-12-03"
+  },
+  {
+    "name": "JOHNSON CONTROLS SECURITY SOLUTIONS LLC",
+    "total": 5946830.99,
+    "transactions": 221,
+    "first_seen": "2018-03-30",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "AMERICAN SYSTEMS CORPORATION",
+    "total": 5930334.75,
+    "transactions": 219,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-07-02"
+  },
+  {
+    "name": "AOC CONNECT LLC",
+    "total": 5927077.19,
+    "transactions": 303,
+    "first_seen": "2016-01-14",
+    "last_seen": "2024-03-18"
+  },
+  {
+    "name": "AVAYA LLC",
+    "total": 5829314.97,
+    "transactions": 136,
+    "first_seen": "2024-05-31",
+    "last_seen": "2025-12-10"
+  },
+  {
+    "name": "CITIZEN DIALOG LLC",
+    "total": 5770976.21,
+    "transactions": 822,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-11-26"
+  },
+  {
+    "name": "GOTHAMS LLC",
+    "total": 5636398.3,
+    "transactions": 49,
+    "first_seen": "2020-12-18",
+    "last_seen": "2023-06-15"
+  },
+  {
+    "name": "CHESAPEAKE NETCRAFTSMEN LLC",
+    "total": 5552765.8,
+    "transactions": 261,
+    "first_seen": "2016-02-23",
+    "last_seen": "2025-12-15"
+  },
+  {
+    "name": "LOCKHEED MARTIN DESKTOP SOLUTIONS INC",
+    "total": 5538033.75,
+    "transactions": 2009,
+    "first_seen": "2016-01-05",
+    "last_seen": "2016-06-28"
+  },
+  {
+    "name": "MAIL MATTERS LLC",
+    "total": 5533795.35,
+    "transactions": 431,
+    "first_seen": "2016-01-19",
+    "last_seen": "2025-12-24"
+  },
+  {
+    "name": "SODEXO INC & AFFILIATES",
+    "total": 5500825.41,
+    "transactions": 824,
+    "first_seen": "2016-01-21",
+    "last_seen": "2025-07-29"
+  },
+  {
+    "name": "MOTOROLA SOLUTIONS INC",
+    "total": 5364250.72,
+    "transactions": 36,
+    "first_seen": "2020-11-02",
+    "last_seen": "2025-01-15"
+  },
+  {
+    "name": "TYCO INTEGRATED SECURITY LLC",
+    "total": 5354160.99,
+    "transactions": 853,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-09-25"
+  },
+  {
+    "name": "SHARP ELECTRONICS CORPORATIION",
+    "total": 5327337.69,
+    "transactions": 1154,
+    "first_seen": "2021-10-04",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "SYSTEMS PLUS INC",
+    "total": 5314907.25,
+    "transactions": 344,
+    "first_seen": "2016-01-21",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "ACCURATE WORD",
+    "total": 5292495.45,
+    "transactions": 16251,
+    "first_seen": "2021-04-01",
+    "last_seen": "2025-06-09"
+  },
+  {
+    "name": "INFOR US INC",
+    "total": 5159025.48,
+    "transactions": 111,
+    "first_seen": "2016-10-20",
+    "last_seen": "2025-12-11"
+  },
+  {
+    "name": "ILC DOVER LP",
+    "total": 5141095.33,
+    "transactions": 10,
+    "first_seen": "2022-03-18",
+    "last_seen": "2024-04-18"
+  },
+  {
+    "name": "GARTNER INC",
+    "total": 5139079.41,
+    "transactions": 60,
+    "first_seen": "2016-05-31",
+    "last_seen": "2025-11-14"
+  },
+  {
+    "name": "HOMETOWN CONNECTIONS",
+    "total": 5006909.23,
+    "transactions": 442,
+    "first_seen": "2017-10-10",
+    "last_seen": "2025-08-01"
+  },
+  {
+    "name": "XEROX CORPORATION",
+    "total": 5005890.82,
+    "transactions": 4923,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-19"
+  },
+  {
+    "name": "RIGHTSTAR SYSTEMS INC",
+    "total": 4999703.01,
+    "transactions": 112,
+    "first_seen": "2016-01-13",
+    "last_seen": "2025-12-08"
+  },
+  {
+    "name": "ARTEMIS CONSULTING INC",
+    "total": 4981320.04,
+    "transactions": 138,
+    "first_seen": "2021-06-14",
+    "last_seen": "2025-12-10"
+  },
+  {
+    "name": "AECOM TECHNICAL SERVICES INC",
+    "total": 4946352.79,
+    "transactions": 130,
+    "first_seen": "2019-12-11",
+    "last_seen": "2025-11-17"
+  },
+  {
+    "name": "MAD SECURITY LLC",
+    "total": 4937684.9,
+    "transactions": 64,
+    "first_seen": "2016-01-28",
+    "last_seen": "2020-04-01"
+  },
+  {
+    "name": "MICROSOFT CORP",
+    "total": 4917355.27,
+    "transactions": 29,
+    "first_seen": "2017-04-05",
+    "last_seen": "2025-03-10"
+  },
+  {
+    "name": "FRONT PORCH STRATEGIES",
+    "total": 4914781.12,
+    "transactions": 721,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "NATIONAL CAPTIONING INSTITUTE",
+    "total": 4882609.5,
+    "transactions": 123,
+    "first_seen": "2016-01-16",
+    "last_seen": "2025-12-03"
+  },
+  {
+    "name": "US CAPITOL HISTORICAL SOCIETY",
+    "total": 4861701.25,
+    "transactions": 638,
+    "first_seen": "2018-07-05",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "SODEXO OPERATIONS LLC",
+    "total": 4852840.47,
+    "transactions": 21,
+    "first_seen": "2018-07-10",
+    "last_seen": "2025-09-02"
+  },
+  {
+    "name": "SIRIUS FEDERAL LLC",
+    "total": 4806565.08,
+    "transactions": 205,
+    "first_seen": "2021-04-06",
+    "last_seen": "2025-12-29"
+  },
+  {
+    "name": "HOUSECALL",
+    "total": 4794768.25,
+    "transactions": 1486,
+    "first_seen": "2016-01-12",
+    "last_seen": "2017-03-31"
+  },
+  {
+    "name": "ITCON SERVICES LLC",
+    "total": 4717478.25,
+    "transactions": 393,
+    "first_seen": "2020-10-07",
+    "last_seen": "2025-12-18"
+  },
+  {
+    "name": "GUNNISON CONSULTING GROUP",
+    "total": 4662539.77,
+    "transactions": 281,
+    "first_seen": "2021-04-15",
+    "last_seen": "2025-07-03"
+  },
+  {
+    "name": "BSL GEM LASER EXPRESS LLC",
+    "total": 4605419.05,
+    "transactions": 3947,
+    "first_seen": "2016-01-06",
+    "last_seen": "2024-03-27"
+  },
+  {
+    "name": "NORTHRAMP LLC",
+    "total": 4549434.37,
+    "transactions": 219,
+    "first_seen": "2016-09-06",
+    "last_seen": "2022-11-30"
+  },
+  {
+    "name": "GRANT THORNTON PUBLIC SECTOR LLC",
+    "total": 4541233.52,
+    "transactions": 160,
+    "first_seen": "2019-10-07",
+    "last_seen": "2025-07-01"
+  },
+  {
+    "name": "ICF INCORPORATED LLC",
+    "total": 4446655.17,
+    "transactions": 127,
+    "first_seen": "2017-07-20",
+    "last_seen": "2025-12-08"
+  },
+  {
+    "name": "VERIZON BUSINESS SERVICES",
+    "total": 4395929.6,
+    "transactions": 4546,
+    "first_seen": "2016-02-02",
+    "last_seen": "2025-12-24"
+  },
+  {
+    "name": "SMARTFORCE TECHNOLOGIES INC",
+    "total": 4362364.14,
+    "transactions": 102,
+    "first_seen": "2019-11-04",
+    "last_seen": "2025-12-04"
+  },
+  {
+    "name": "ALLSTEEL",
+    "total": 4354460.76,
+    "transactions": 466,
+    "first_seen": "2016-01-11",
+    "last_seen": "2025-12-17"
+  },
+  {
+    "name": "GSA ACCTS RECEIVABLE BRANCH (IPAC)",
+    "total": 4349870.29,
+    "transactions": 64,
+    "first_seen": "2018-01-22",
+    "last_seen": "2025-12-18"
+  },
+  {
+    "name": "IGNYTE GROUP INC",
+    "total": 4337746.57,
+    "transactions": 212,
+    "first_seen": "2017-12-07",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "BENTLEY MILLS INC",
+    "total": 4287429.7,
+    "transactions": 231,
+    "first_seen": "2016-05-23",
+    "last_seen": "2025-12-11"
+  },
+  {
+    "name": "MOREDIRECT INC DBA CONNECTION",
+    "total": 4248134.97,
+    "transactions": 748,
+    "first_seen": "2021-07-01",
+    "last_seen": "2025-07-03"
+  },
+  {
+    "name": "FORD AUDIO-VIDEO SYSTEMS INC",
+    "total": 4244681.48,
+    "transactions": 54,
+    "first_seen": "2016-07-13",
+    "last_seen": "2025-09-19"
+  },
+  {
+    "name": "MBL TECHNOLOGIES INC",
+    "total": 4193368.19,
+    "transactions": 121,
+    "first_seen": "2016-11-16",
+    "last_seen": "2022-09-29"
+  },
+  {
+    "name": "DEPT OF HOMELAND SECURITY",
+    "total": 4156729.32,
+    "transactions": 7994,
+    "first_seen": "2016-02-01",
+    "last_seen": "2025-12-23"
+  },
+  {
+    "name": "MANPOWERGROUP PUBLIC SECTOR INC",
+    "total": 4121175.18,
+    "transactions": 341,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-23"
+  },
+  {
+    "name": "TRINITY FURNITURE",
+    "total": 4114671.5,
+    "transactions": 278,
+    "first_seen": "2016-01-21",
+    "last_seen": "2025-11-20"
+  },
+  {
+    "name": "THE PIVOT GROUP INC",
+    "total": 4107045.51,
+    "transactions": 226,
+    "first_seen": "2016-02-22",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "HUMAN CIRCUIT INC",
+    "total": 4046866.06,
+    "transactions": 375,
+    "first_seen": "2016-02-25",
+    "last_seen": "2025-12-01"
+  },
+  {
+    "name": "MICROSOFT SERVICES",
+    "total": 3913135.97,
+    "transactions": 40,
+    "first_seen": "2017-01-31",
+    "last_seen": "2022-10-06"
+  },
+  {
+    "name": "AMPCUS INC",
+    "total": 3834898.06,
+    "transactions": 255,
+    "first_seen": "2016-11-17",
+    "last_seen": "2025-12-02"
+  },
+  {
+    "name": "MC DEAN INC",
+    "total": 3785632.8,
+    "transactions": 317,
+    "first_seen": "2018-11-07",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "SECURE GOVERNMENT TECHNOLOGIES LLC",
+    "total": 3755651.02,
+    "transactions": 17,
+    "first_seen": "2018-09-10",
+    "last_seen": "2025-12-18"
+  },
+  {
+    "name": "NAVIENT",
+    "total": 3724578.51,
+    "transactions": 8725,
+    "first_seen": "2016-01-19",
+    "last_seen": "2024-11-14"
+  },
+  {
+    "name": "W B MASON COMPANY INC",
+    "total": 3721656.95,
+    "transactions": 4973,
+    "first_seen": "2018-10-02",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "TELEPHONE TOWNHALL MEETING INC",
+    "total": 3718737.41,
+    "transactions": 655,
+    "first_seen": "2016-01-15",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "SOFTWARE INFORMATION RESOURCE CORP",
+    "total": 3667541.26,
+    "transactions": 73,
+    "first_seen": "2016-05-25",
+    "last_seen": "2025-12-22"
+  },
+  {
+    "name": "BLOOMBERG LP",
+    "total": 3544627.13,
+    "transactions": 621,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-09-09"
+  },
+  {
+    "name": "ICF CONSULTING GROUP INC",
+    "total": 3500305.05,
+    "transactions": 90,
+    "first_seen": "2020-04-01",
+    "last_seen": "2025-11-18"
+  },
+  {
+    "name": "CREATIVE DIRECT LLC",
+    "total": 3462183.37,
+    "transactions": 267,
+    "first_seen": "2016-12-01",
+    "last_seen": "2025-12-10"
+  },
+  {
+    "name": "RAVEN TEK SOLUTION PARTNERS LLC",
+    "total": 3429784.26,
+    "transactions": 41,
+    "first_seen": "2019-08-27",
+    "last_seen": "2023-09-12"
+  },
+  {
+    "name": "OFFICE DEPOT INC",
+    "total": 3408158.34,
+    "transactions": 25559,
+    "first_seen": "2016-01-04",
+    "last_seen": "2022-03-30"
+  },
+  {
+    "name": "US SENATE OFFICE OF THE SERGEANT AT ARMS",
+    "total": 3400931.25,
+    "transactions": 14,
+    "first_seen": "2022-07-06",
+    "last_seen": "2025-01-21"
+  },
+  {
+    "name": "ILYNX INC",
+    "total": 3382877.46,
+    "transactions": 201,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-18"
+  },
+  {
+    "name": "COUPA SOFTWARE INC",
+    "total": 3327787.62,
+    "transactions": 29,
+    "first_seen": "2020-10-29",
+    "last_seen": "2025-11-13"
+  },
+  {
+    "name": "MONTGOMERY FURNITURE SERVICE",
+    "total": 3297327.2,
+    "transactions": 934,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "G2SF INC",
+    "total": 3278117.3,
+    "transactions": 130,
+    "first_seen": "2018-05-09",
+    "last_seen": "2020-09-29"
+  },
+  {
+    "name": "CANON USA INC",
+    "total": 3189915.24,
+    "transactions": 593,
+    "first_seen": "2016-01-19",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "EN-NET SERVICES LLC",
+    "total": 3186541.27,
+    "transactions": 108,
+    "first_seen": "2021-10-22",
+    "last_seen": "2025-08-05"
+  },
+  {
+    "name": "GRANT THORNTON LLP",
+    "total": 3127305.21,
+    "transactions": 116,
+    "first_seen": "2016-10-27",
+    "last_seen": "2019-09-25"
+  },
+  {
+    "name": "TDM COMMUNICATIONS",
+    "total": 3115206.89,
+    "transactions": 139,
+    "first_seen": "2016-01-06",
+    "last_seen": "2025-11-17"
+  },
+  {
+    "name": "CONSTITUENT COMMUNICATION SERVICES LLC",
+    "total": 3090863.47,
+    "transactions": 167,
+    "first_seen": "2016-01-19",
+    "last_seen": "2024-10-31"
+  },
+  {
+    "name": "OMNI BUSINESS SYSTEMS-FAXPLUS INC",
+    "total": 3038191.65,
+    "transactions": 907,
+    "first_seen": "2018-07-02",
+    "last_seen": "2025-12-15"
+  },
+  {
+    "name": "INDIGOV",
+    "total": 3020337.47,
+    "transactions": 805,
+    "first_seen": "2021-11-26",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "LOGISTICS MANAGEMENT INSTITUTE",
+    "total": 2867980.3,
+    "transactions": 100,
+    "first_seen": "2016-11-23",
+    "last_seen": "2019-12-17"
+  },
+  {
+    "name": "WILLIAMS ADLEY & COMPANY DC LLP",
+    "total": 2854419.3,
+    "transactions": 26,
+    "first_seen": "2018-11-20",
+    "last_seen": "2025-06-18"
+  },
+  {
+    "name": "DRIVEN INC",
+    "total": 2779325.18,
+    "transactions": 17,
+    "first_seen": "2021-11-05",
+    "last_seen": "2023-02-01"
+  },
+  {
+    "name": "POLAR SOLUTIONS INC",
+    "total": 2771857.34,
+    "transactions": 96,
+    "first_seen": "2021-12-29",
+    "last_seen": "2023-03-08"
+  },
+  {
+    "name": "MSOW INC",
+    "total": 2766111.6,
+    "transactions": 139,
+    "first_seen": "2016-01-29",
+    "last_seen": "2023-03-01"
+  },
+  {
+    "name": "SWISH DATA CORPORATION",
+    "total": 2763391.4,
+    "transactions": 21,
+    "first_seen": "2019-05-17",
+    "last_seen": "2025-06-12"
+  },
+  {
+    "name": "AUGUST SCHELL ENTERPRISES INC",
+    "total": 2755557.31,
+    "transactions": 105,
+    "first_seen": "2018-11-13",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "INTERNATIONAL ROLL-CALL CORPORATION",
+    "total": 2744706.16,
+    "transactions": 33,
+    "first_seen": "2016-03-15",
+    "last_seen": "2025-11-13"
+  },
+  {
+    "name": "ARTICLE I COMMUNCATIONS LLC",
+    "total": 2689380.11,
+    "transactions": 156,
+    "first_seen": "2017-12-14",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "CLEARSHARK LLC",
+    "total": 2665509.24,
+    "transactions": 56,
+    "first_seen": "2017-02-14",
+    "last_seen": "2023-09-21"
+  },
+  {
+    "name": "HACKETT SECURITY INC",
+    "total": 2659079.69,
+    "transactions": 682,
+    "first_seen": "2021-03-03",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "VIVA USA INC",
+    "total": 2649924.34,
+    "transactions": 245,
+    "first_seen": "2020-03-13",
+    "last_seen": "2025-12-23"
+  },
+  {
+    "name": "RAVENTEK SOLUTION PARTNERS LLC",
+    "total": 2642718.46,
+    "transactions": 37,
+    "first_seen": "2023-10-06",
+    "last_seen": "2025-12-01"
+  },
+  {
+    "name": "TVEYES INC",
+    "total": 2642040.0,
+    "transactions": 1290,
+    "first_seen": "2016-01-04",
+    "last_seen": "2025-12-31"
+  },
+  {
+    "name": "THUNDERCAT TECHNOLOGY LLC",
+    "total": 2629750.92,
+    "transactions": 38,
+    "first_seen": "2016-01-19",
+    "last_seen": "2025-09-26"
+  },
+  {
+    "name": "US ARCHITECT OF THE CAPITOL",
+    "total": 2610346.88,
+    "transactions": 335,
+    "first_seen": "2016-01-20",
+    "last_seen": "2025-12-02"
+  },
+  {
+    "name": "PRINTGLOBE INC",
+    "total": 2600632.13,
+    "transactions": 698,
+    "first_seen": "2016-01-06",
+    "last_seen": "2025-12-18"
+  },
+  {
+    "name": "LEIDOS INC",
+    "total": 2597649.54,
+    "transactions": 205,
+    "first_seen": "2016-03-23",
+    "last_seen": "2025-12-09"
+  },
+  {
+    "name": "BOISE CASCADE COMPANY",
+    "total": 2594700.08,
+    "transactions": 15644,
+    "first_seen": "2016-01-05",
+    "last_seen": "2018-04-26"
+  },
+  {
+    "name": "PROFESSIONAL TECHNICIANS LLC",
+    "total": 2589347.61,
+    "transactions": 1669,
+    "first_seen": "2016-01-16",
+    "last_seen": "2025-12-16"
+  },
+  {
+    "name": "NATIONAL JOURNAL GROUP LLC",
+    "total": 2587501.0,
+    "transactions": 151,
+    "first_seen": "2019-01-28",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "MILLER JONAS W.",
+    "total": 2580163.88,
+    "transactions": 1333,
+    "first_seen": "",
+    "last_seen": "2025-12-26"
+  },
+  {
+    "name": "WORLD WIDE TECHNOLOGY LLC",
+    "total": 2579633.69,
+    "transactions": 47,
+    "first_seen": "2019-09-16",
+    "last_seen": "2023-06-06"
+  },
+  {
+    "name": "GRB INC",
+    "total": 2543690.77,
+    "transactions": 79,
+    "first_seen": "2016-01-21",
+    "last_seen": "2025-03-28"
+  },
+  {
+    "name": "CISION US INC",
+    "total": 2516325.14,
+    "transactions": 302,
+    "first_seen": "2016-02-12",
+    "last_seen": "2025-12-16"
+  },
+  {
+    "name": "XCENTIAL GROUP LLC",
+    "total": 2505863.0,
+    "transactions": 71,
+    "first_seen": "2016-01-29",
+    "last_seen": "2019-06-17"
+  },
+  {
+    "name": "BOOZ ALLEN HAMILTON",
+    "total": 2503440.22,
+    "transactions": 110,
+    "first_seen": "2016-01-08",
+    "last_seen": "2020-05-13"
+  },
+  {
+    "name": "EXECUTIVE PROTECTION SYSTEMS LLC",
+    "total": 2491391.59,
+    "transactions": 140,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-17"
+  },
+  {
+    "name": "THOMPSON REUTERS-WEST PAYMENT CENTER",
+    "total": 2438581.12,
+    "transactions": 387,
+    "first_seen": "2016-01-11",
+    "last_seen": "2025-12-15"
+  },
+  {
+    "name": "CREATIVE FRANKING",
+    "total": 2421976.69,
+    "transactions": 176,
+    "first_seen": "2016-01-05",
+    "last_seen": "2025-12-18"
+  },
+  {
+    "name": "MASLOW MEDIA GROUP INC",
+    "total": 2402591.24,
+    "transactions": 186,
+    "first_seen": "2016-02-16",
+    "last_seen": "2023-08-16"
+  },
+  {
+    "name": "PATRIOT TECHNOLOGIES INC",
+    "total": 2401534.35,
+    "transactions": 117,
+    "first_seen": "2016-01-11",
+    "last_seen": "2020-01-17"
+  },
+  {
+    "name": "MINERAL GAP DATA CENTER",
+    "total": 2394403.68,
+    "transactions": 19,
+    "first_seen": "2016-10-12",
+    "last_seen": "2017-06-14"
+  },
+  {
+    "name": "STEVENS KIMBERLY",
+    "total": 2372383.79,
+    "transactions": 1203,
+    "first_seen": "",
+    "last_seen": "2025-12-23"
+  },
+  {
+    "name": "RED RIVER TECHNOLOGY LLC",
+    "total": 2370789.61,
+    "transactions": 16,
+    "first_seen": "2019-09-05",
+    "last_seen": "2025-12-17"
+  },
+  {
+    "name": "CITI PCARD-VZWRLSS APOCC VISB",
+    "total": 2362309.68,
+    "transactions": 3219,
+    "first_seen": "2016-01-21",
+    "last_seen": "2025-12-30"
+  },
+  {
+    "name": "OCCASIONS CATERERS",
+    "total": 2355609.49,
+    "transactions": 234,
+    "first_seen": "2016-01-28",
+    "last_seen": "2025-12-16"
+  }
+]

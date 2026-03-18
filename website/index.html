@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Disbursements Data Explorer</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <style>
+        :root {
+            --navy: #1a2744;
+            --blue: #2c5282;
+            --light-blue: #ebf8ff;
+            --red: #c53030;
+            --gold: #d69e2e;
+            --gray-50: #f7fafc;
+            --gray-100: #edf2f7;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e0;
+            --gray-500: #718096;
+            --gray-700: #4a5568;
+            --gray-800: #2d3748;
+            --gray-900: #1a202c;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            color: var(--gray-900);
+            background: var(--gray-50);
+            line-height: 1.6;
+        }
+
+        header {
+            background: var(--navy);
+            color: white;
+            padding: 2rem 0;
+            border-bottom: 4px solid var(--red);
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .seal {
+            font-size: 3rem;
+            line-height: 1;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+        }
+
+        header p {
+            color: var(--gray-300);
+            font-size: 0.95rem;
+            margin-top: 0.25rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        nav {
+            background: white;
+            border-bottom: 1px solid var(--gray-200);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        }
+
+        nav .container {
+            display: flex;
+            gap: 0;
+            overflow-x: auto;
+        }
+
+        nav a {
+            padding: 0.75rem 1.25rem;
+            text-decoration: none;
+            color: var(--gray-700);
+            font-size: 0.9rem;
+            font-weight: 500;
+            white-space: nowrap;
+            border-bottom: 2px solid transparent;
+            transition: all 0.15s;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--blue);
+            border-bottom-color: var(--blue);
+        }
+
+        main { padding: 2rem 0; }
+
+        .section {
+            display: none;
+            animation: fadeIn 0.2s ease;
+        }
+
+        .section.active { display: block; }
+
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--navy);
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            color: var(--gray-800);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.25rem;
+            border: 1px solid var(--gray-200);
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        .stat-card .label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--gray-500);
+            margin-bottom: 0.25rem;
+        }
+
+        .stat-card .value {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--navy);
+        }
+
+        .stat-card .subtext {
+            font-size: 0.8rem;
+            color: var(--gray-500);
+            margin-top: 0.25rem;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            border: 1px solid var(--gray-200);
+            margin-bottom: 1.5rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+        }
+
+        .chart-container canvas {
+            max-height: 400px;
+        }
+
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .two-col { grid-template-columns: 1fr; }
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        th {
+            background: var(--gray-100);
+            text-align: left;
+            padding: 0.6rem 0.75rem;
+            font-weight: 600;
+            color: var(--gray-700);
+            border-bottom: 2px solid var(--gray-200);
+            position: sticky;
+            top: 41px;
+            cursor: pointer;
+        }
+
+        th:hover { background: var(--gray-200); }
+
+        td {
+            padding: 0.5rem 0.75rem;
+            border-bottom: 1px solid var(--gray-100);
+        }
+
+        tr:hover td { background: var(--light-blue); }
+
+        .amount { text-align: right; font-variant-numeric: tabular-nums; }
+        .amount.negative { color: var(--red); }
+
+        .table-wrap {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--gray-200);
+            overflow: auto;
+            max-height: 600px;
+            margin-bottom: 1.5rem;
+        }
+
+        .search-box {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .search-box input, .search-box select {
+            padding: 0.5rem 0.75rem;
+            border: 1px solid var(--gray-300);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            outline: none;
+        }
+
+        .search-box input:focus, .search-box select:focus {
+            border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(44,82,130,0.1);
+        }
+
+        .search-box input { flex: 1; }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.5rem 1rem;
+            background: var(--blue);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.15s;
+        }
+
+        .btn:hover { background: var(--navy); }
+
+        .btn-outline {
+            background: white;
+            color: var(--blue);
+            border: 1px solid var(--blue);
+        }
+
+        .btn-outline:hover { background: var(--light-blue); }
+
+        .download-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .download-card {
+            background: white;
+            border: 1px solid var(--gray-200);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .download-card .info h4 { font-size: 1rem; color: var(--navy); }
+        .download-card .info p { font-size: 0.8rem; color: var(--gray-500); }
+
+        .methodology {
+            background: white;
+            border-radius: 8px;
+            border: 1px solid var(--gray-200);
+            padding: 2rem;
+            line-height: 1.8;
+        }
+
+        .methodology h3 { margin-top: 1.5rem; margin-bottom: 0.5rem; }
+        .methodology p { margin-bottom: 1rem; }
+        .methodology ul { margin-left: 1.5rem; margin-bottom: 1rem; }
+        .methodology code {
+            background: var(--gray-100);
+            padding: 0.15rem 0.35rem;
+            border-radius: 3px;
+            font-size: 0.85em;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .badge-blue { background: var(--light-blue); color: var(--blue); }
+        .badge-green { background: #f0fff4; color: #276749; }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--gray-500);
+        }
+
+        footer {
+            background: var(--navy);
+            color: var(--gray-300);
+            padding: 2rem 0;
+            margin-top: 3rem;
+            font-size: 0.85rem;
+        }
+
+        footer a { color: var(--gold); }
+
+        .info-banner {
+            background: var(--light-blue);
+            border: 1px solid #bee3f8;
+            border-radius: 8px;
+            padding: 1rem 1.25rem;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--blue);
+        }
+
+        .result-count {
+            font-size: 0.85rem;
+            color: var(--gray-500);
+            margin-bottom: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="seal">&#127963;</div>
+            <div>
+                <h1>House Disbursements Data Explorer</h1>
+                <p>U.S. House of Representatives Spending Data, 2016&ndash;2025</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <a href="#overview" class="active" data-section="overview">Overview</a>
+            <a href="#trends" data-section="trends">Spending Trends</a>
+            <a href="#offices" data-section="offices">Member Offices</a>
+            <a href="#vendors" data-section="vendors">Vendors</a>
+            <a href="#categories" data-section="categories">Categories</a>
+            <a href="#download" data-section="download">Download Data</a>
+            <a href="#about" data-section="about">About</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- OVERVIEW -->
+        <div id="overview" class="section active">
+            <div class="info-banner">
+                This dataset includes <strong>40 quarters</strong> of official House disbursement data published by the Chief Administrative Officer.
+                All data is sourced directly from <a href="https://www.house.gov/the-house-explained/open-government/statement-of-disbursements" target="_blank">house.gov</a>.
+            </div>
+
+            <div class="stats-grid" id="stats-grid">
+                <div class="stat-card">
+                    <div class="label">Total Spending</div>
+                    <div class="value" id="stat-spending">...</div>
+                    <div class="subtext">2016&ndash;2025</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Detail Transactions</div>
+                    <div class="value" id="stat-records">...</div>
+                    <div class="subtext">Individual disbursement records</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Organizations</div>
+                    <div class="value" id="stat-orgs">...</div>
+                    <div class="subtext">Distinct offices tracked</div>
+                </div>
+                <div class="stat-card">
+                    <div class="label">Vendors</div>
+                    <div class="value" id="stat-vendors">...</div>
+                    <div class="subtext">Unique payees</div>
+                </div>
+            </div>
+
+            <div class="two-col">
+                <div class="chart-container">
+                    <h3>Annual Spending</h3>
+                    <canvas id="chart-annual"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Spending by Category</h3>
+                    <canvas id="chart-categories"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h3>Quarterly Spending Trend</h3>
+                <canvas id="chart-quarterly"></canvas>
+            </div>
+        </div>
+
+        <!-- TRENDS -->
+        <div id="trends" class="section">
+            <h2>Spending Trends</h2>
+            <div class="chart-container">
+                <h3>Annual Spending by Category</h3>
+                <canvas id="chart-stacked-annual" style="max-height:500px"></canvas>
+            </div>
+            <div class="two-col">
+                <div class="chart-container">
+                    <h3>Personnel vs Non-Personnel Spending</h3>
+                    <canvas id="chart-personnel-split"></canvas>
+                </div>
+                <div class="chart-container">
+                    <h3>Travel Spending Over Time</h3>
+                    <canvas id="chart-travel"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- OFFICES -->
+        <div id="offices" class="section">
+            <h2>Member Offices</h2>
+            <p style="margin-bottom:1rem;color:var(--gray-500)">Spending under the Members' Representational Allowance (MRA) program.</p>
+            <div class="search-box">
+                <input type="text" id="office-search" placeholder="Search offices (e.g., 'Pelosi', 'Committee on')...">
+                <select id="office-year-filter">
+                    <option value="">All Years</option>
+                </select>
+            </div>
+            <div class="result-count" id="office-count"></div>
+            <div class="table-wrap">
+                <table id="office-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="office">Office</th>
+                            <th data-sort="total" class="amount">Total Spending</th>
+                            <th data-sort="years">Years Active</th>
+                        </tr>
+                    </thead>
+                    <tbody id="office-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- VENDORS -->
+        <div id="vendors" class="section">
+            <h2>Top Vendors</h2>
+            <p style="margin-bottom:1rem;color:var(--gray-500)">Largest recipients of House disbursements.</p>
+            <div class="search-box">
+                <input type="text" id="vendor-search" placeholder="Search vendors...">
+            </div>
+            <div class="result-count" id="vendor-count"></div>
+            <div class="table-wrap">
+                <table id="vendor-table">
+                    <thead>
+                        <tr>
+                            <th data-sort="name">Vendor</th>
+                            <th data-sort="total" class="amount">Total</th>
+                            <th data-sort="transactions" class="amount">Transactions</th>
+                            <th data-sort="first">First Seen</th>
+                            <th data-sort="last">Last Seen</th>
+                        </tr>
+                    </thead>
+                    <tbody id="vendor-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- CATEGORIES -->
+        <div id="categories" class="section">
+            <h2>Spending Categories</h2>
+            <div class="chart-container">
+                <h3>Category Breakdown</h3>
+                <canvas id="chart-cat-bar"></canvas>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Category</th>
+                            <th class="amount">Total</th>
+                            <th class="amount">Transactions</th>
+                            <th class="amount">% of Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="cat-tbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- DOWNLOAD -->
+        <div id="download" class="section">
+            <h2>Download Data</h2>
+            <div class="info-banner">
+                All data is derived from official CSV files published by the U.S. House Chief Administrative Officer.
+                Download by year or get the complete dataset.
+            </div>
+
+            <h3 style="margin-top:1.5rem">Complete Dataset</h3>
+            <div class="download-card" style="margin-bottom:2rem">
+                <div class="info">
+                    <h4>All Disbursements (2016&ndash;2025)</h4>
+                    <p id="master-export-info">Loading...</p>
+                </div>
+                <a href="exports/house_disbursements_all_2016_2025.csv" class="btn" download>Download CSV</a>
+            </div>
+
+            <h3>By Year</h3>
+            <div class="download-grid" id="download-grid">
+                <div class="loading">Loading...</div>
+            </div>
+        </div>
+
+        <!-- ABOUT -->
+        <div id="about" class="section">
+            <h2>About This Project</h2>
+            <div class="methodology">
+                <h3>What is the Statement of Disbursements?</h3>
+                <p>
+                    The <strong>Statement of Disbursements of the House</strong> is a quarterly report published by the
+                    Chief Administrative Officer of the U.S. House of Representatives. It documents every expenditure
+                    made by the House, including payments from Members' Representational Allowances (MRA), committee
+                    budgets, leadership offices, and administrative operations.
+                </p>
+                <p>
+                    These reports have been published for over 50 years. Since 2009, they have been available as
+                    downloadable PDFs from <a href="https://www.house.gov/the-house-explained/open-government/statement-of-disbursements" target="_blank">house.gov</a>.
+                    Beginning in Q1 2016, the House also publishes the data as CSV files.
+                </p>
+
+                <h3>Data Sources</h3>
+                <ul>
+                    <li><strong>2016&ndash;2025:</strong> Official CSV files published by the House Chief Administrative Officer</li>
+                    <li><strong>2009&ndash;2015:</strong> Born-digital PDF reports available from house.gov (parseable with the <a href="https://github.com/propublica/disbursements" target="_blank">ProPublica parser</a>)</li>
+                    <li><strong>1970&ndash;2008:</strong> Scanned PDFs digitized by the Boston Public Library and available on the <a href="https://archive.org/search?query=title%3A%22statement+of+disbursements%22" target="_blank">Internet Archive</a></li>
+                </ul>
+
+                <h3>Schema</h3>
+                <p>Each record in the unified dataset includes:</p>
+                <ul>
+                    <li><code>Organization</code> &mdash; The office making the disbursement (e.g., "OFFICE OF THE SPEAKER", "HON. NANCY PELOSI")</li>
+                    <li><code>Program</code> &mdash; Budget program (e.g., "MEMBERS REPRESENTATIONAL ALLOWANCE")</li>
+                    <li><code>Category</code> &mdash; Spending category (Personnel Compensation, Travel, Equipment, etc.)</li>
+                    <li><code>Transaction Date</code> &mdash; Date the transaction was recorded</li>
+                    <li><code>Vendor Name</code> &mdash; The payee or vendor</li>
+                    <li><code>Start/End Date</code> &mdash; Performance period of the service/goods</li>
+                    <li><code>Description</code> &mdash; Purpose of the expenditure</li>
+                    <li><code>Amount</code> &mdash; Dollar amount</li>
+                </ul>
+
+                <h3>Data Notes</h3>
+                <ul>
+                    <li>The CSV format published by the House changed over time: 12 columns in 2016&ndash;2022, expanding to 18 columns from Q4 2022 onward (adding organization codes, vendor IDs, and budget object codes).</li>
+                    <li>Fiscal year references include prefixes like "FY" and "LY" (Legislative Year) in newer data. These have been normalized to plain years in our aggregations.</li>
+                    <li>Some transactions have negative amounts, representing refunds or adjustments.</li>
+                    <li>The dataset includes both DETAIL records (individual transactions) and SUBTOTAL/GRAND TOTAL rows. Our analyses use only DETAIL records.</li>
+                </ul>
+
+                <h3>Historical Data (Pre-2016)</h3>
+                <p>
+                    The older reports (1970&ndash;2008) exist as scanned PDFs on the Internet Archive, digitized by the
+                    Boston Public Library with support from the Kahle/Austin Foundation. The OCR quality of these scans
+                    varies significantly, making automated extraction challenging.
+                </p>
+                <p>
+                    The <a href="https://github.com/propublica/disbursements" target="_blank">Sunlight Foundation / ProPublica parser</a>
+                    (originally by Luke Rosiak, improved by James Turk) can extract structured data from the 2009&ndash;2015
+                    text-based PDFs from house.gov. This pipeline could be extended to cover those years as well.
+                </p>
+
+                <h3>Prior Work</h3>
+                <p>This project builds on decades of work by government transparency advocates:</p>
+                <ul>
+                    <li><strong>Sunlight Foundation</strong> &mdash; Original PDF parser and House Staff Directory</li>
+                    <li><strong>ProPublica</strong> &mdash; Maintained and published the parser and <a href="https://projects.propublica.org/represent/expenditures" target="_blank">expenditure data</a></li>
+                    <li><strong>Daniel Schuman / Demand Progress</strong> &mdash; Advocacy for structured disbursement data</li>
+                    <li><strong>Congressional Data Coalition</strong> &mdash; Push for machine-readable congressional data</li>
+                </ul>
+
+                <h3>Technical Details</h3>
+                <p>
+                    The data pipeline downloads all available CSVs from house.gov, normalizes the varying column formats
+                    into a unified schema, stores everything in a SQLite database, and generates the JSON data files and
+                    CSV exports served by this website. The complete source code is available on
+                    <a href="https://github.com" target="_blank">GitHub</a>.
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                Data sourced from the <a href="https://www.house.gov/the-house-explained/open-government/statement-of-disbursements" target="_blank">U.S. House of Representatives</a>.
+                Built with data from 40 quarters of official disbursement reports.
+            </p>
+            <p style="margin-top:0.5rem">
+                This is an open-data project. All source data is public domain.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Utility functions
+        const fmt = (n) => {
+            if (Math.abs(n) >= 1e9) return '$' + (n/1e9).toFixed(1) + 'B';
+            if (Math.abs(n) >= 1e6) return '$' + (n/1e6).toFixed(1) + 'M';
+            if (Math.abs(n) >= 1e3) return '$' + (n/1e3).toFixed(0) + 'K';
+            return '$' + n.toFixed(2);
+        };
+
+        const fmtFull = (n) => '$' + n.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        const fmtInt = (n) => n.toLocaleString('en-US');
+
+        const COLORS = [
+            '#2c5282', '#c53030', '#d69e2e', '#38a169', '#805ad5',
+            '#dd6b20', '#319795', '#d53f8c', '#718096', '#e53e3e',
+        ];
+
+        // Data cache
+        let DATA = {};
+
+        async function loadJSON(file) {
+            if (DATA[file]) return DATA[file];
+            const resp = await fetch('data/' + file);
+            DATA[file] = await resp.json();
+            return DATA[file];
+        }
+
+        // Navigation
+        document.querySelectorAll('nav a').forEach(a => {
+            a.addEventListener('click', (e) => {
+                e.preventDefault();
+                const section = a.dataset.section;
+                document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                document.querySelectorAll('nav a').forEach(na => na.classList.remove('active'));
+                document.getElementById(section).classList.add('active');
+                a.classList.add('active');
+                window.location.hash = section;
+                initSection(section);
+            });
+        });
+
+        // Init sections on demand
+        const initialized = {};
+        async function initSection(name) {
+            if (initialized[name]) return;
+            initialized[name] = true;
+
+            switch(name) {
+                case 'overview': await initOverview(); break;
+                case 'trends': await initTrends(); break;
+                case 'offices': await initOffices(); break;
+                case 'vendors': await initVendors(); break;
+                case 'categories': await initCategories(); break;
+                case 'download': await initDownload(); break;
+            }
+        }
+
+        async function initOverview() {
+            const summary = await loadJSON('summary.json');
+            const annual = await loadJSON('annual_spending.json');
+            const quarterly = await loadJSON('quarterly_spending.json');
+            const cats = await loadJSON('categories.json');
+
+            document.getElementById('stat-spending').textContent = fmt(summary.total_spending);
+            document.getElementById('stat-records').textContent = fmtInt(summary.total_records);
+            document.getElementById('stat-orgs').textContent = fmtInt(summary.total_organizations);
+            document.getElementById('stat-vendors').textContent = fmtInt(summary.total_vendors);
+
+            // Annual chart
+            const mainYears = annual.filter(a => a.year >= 2016 && a.year <= 2025);
+            new Chart(document.getElementById('chart-annual'), {
+                type: 'bar',
+                data: {
+                    labels: mainYears.map(a => a.year),
+                    datasets: [{
+                        label: 'Total Spending',
+                        data: mainYears.map(a => a.total),
+                        backgroundColor: '#2c5282',
+                        borderRadius: 4,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: { label: ctx => fmtFull(ctx.raw) } }
+                    },
+                    scales: {
+                        y: { ticks: { callback: v => fmt(v) } }
+                    }
+                }
+            });
+
+            // Category pie chart
+            const topCats = cats.filter(c => c.total > 0).slice(0, 8);
+            new Chart(document.getElementById('chart-categories'), {
+                type: 'doughnut',
+                data: {
+                    labels: topCats.map(c => c.category),
+                    datasets: [{
+                        data: topCats.map(c => c.total),
+                        backgroundColor: COLORS,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'right', labels: { boxWidth: 12, font: { size: 11 } } },
+                        tooltip: { callbacks: { label: ctx => ctx.label + ': ' + fmtFull(ctx.raw) } }
+                    }
+                }
+            });
+
+            // Quarterly trend
+            new Chart(document.getElementById('chart-quarterly'), {
+                type: 'line',
+                data: {
+                    labels: quarterly.map(q => q.quarter),
+                    datasets: [{
+                        label: 'Total Spending',
+                        data: quarterly.map(q => q.total),
+                        borderColor: '#2c5282',
+                        backgroundColor: 'rgba(44,82,130,0.1)',
+                        fill: true,
+                        tension: 0.3,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: { callbacks: { label: ctx => fmtFull(ctx.raw) } }
+                    },
+                    scales: {
+                        y: { ticks: { callback: v => fmt(v) } },
+                        x: { ticks: { maxTicksLimit: 20 } }
+                    }
+                }
+            });
+        }
+
+        async function initTrends() {
+            const catSpending = await loadJSON('category_spending.json');
+            const quarterly = await loadJSON('quarterly_spending.json');
+
+            // Stacked annual by category
+            const years = Object.keys(catSpending).filter(y => +y >= 2016 && +y <= 2025).sort();
+            const mainCats = ['PERSONNEL COMPENSATION', 'PERSONNEL BENEFITS', 'OTHER SERVICES',
+                'RENT  COMMUNICATION  UTILITIES', 'EQUIPMENT', 'SUPPLIES AND MATERIALS',
+                'TRAVEL', 'PRINTING AND REPRODUCTION', 'FRANKED MAIL'];
+
+            new Chart(document.getElementById('chart-stacked-annual'), {
+                type: 'bar',
+                data: {
+                    labels: years,
+                    datasets: mainCats.map((cat, i) => ({
+                        label: cat.replace(/  /g, ', '),
+                        data: years.map(y => (catSpending[y] && catSpending[y][cat]) || 0),
+                        backgroundColor: COLORS[i],
+                    }))
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 10 } } },
+                        tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmtFull(ctx.raw) } }
+                    },
+                    scales: {
+                        x: { stacked: true },
+                        y: { stacked: true, ticks: { callback: v => fmt(v) } }
+                    }
+                }
+            });
+
+            // Personnel vs non-personnel
+            const personnelData = years.map(y => {
+                const pc = (catSpending[y] && catSpending[y]['PERSONNEL COMPENSATION']) || 0;
+                const pb = (catSpending[y] && catSpending[y]['PERSONNEL BENEFITS']) || 0;
+                return pc + pb;
+            });
+            const totalByYear = years.map(y => {
+                return Object.values(catSpending[y] || {}).reduce((a, b) => a + b, 0);
+            });
+            const nonPersonnel = totalByYear.map((t, i) => t - personnelData[i]);
+
+            new Chart(document.getElementById('chart-personnel-split'), {
+                type: 'bar',
+                data: {
+                    labels: years,
+                    datasets: [
+                        { label: 'Personnel', data: personnelData, backgroundColor: '#2c5282' },
+                        { label: 'Non-Personnel', data: nonPersonnel, backgroundColor: '#d69e2e' },
+                    ]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: { callbacks: { label: ctx => ctx.dataset.label + ': ' + fmtFull(ctx.raw) } }
+                    },
+                    scales: {
+                        x: { stacked: true },
+                        y: { stacked: true, ticks: { callback: v => fmt(v) } }
+                    }
+                }
+            });
+
+            // Travel over time
+            new Chart(document.getElementById('chart-travel'), {
+                type: 'line',
+                data: {
+                    labels: quarterly.map(q => q.quarter),
+                    datasets: [{
+                        label: 'Travel',
+                        data: quarterly.map(q => q.travel),
+                        borderColor: '#c53030',
+                        backgroundColor: 'rgba(197,48,48,0.1)',
+                        fill: true,
+                        tension: 0.3,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        tooltip: { callbacks: { label: ctx => fmtFull(ctx.raw) } }
+                    },
+                    scales: {
+                        y: { ticks: { callback: v => fmt(v) } },
+                        x: { ticks: { maxTicksLimit: 20 } }
+                    }
+                }
+            });
+        }
+
+        async function initOffices() {
+            const offices = await loadJSON('member_offices.json');
+            const tbody = document.getElementById('office-tbody');
+            const search = document.getElementById('office-search');
+            const yearFilter = document.getElementById('office-year-filter');
+            const countEl = document.getElementById('office-count');
+
+            // Populate year filter
+            const allYears = new Set();
+            offices.forEach(o => o.years_active.forEach(y => allYears.add(y)));
+            [...allYears].sort().forEach(y => {
+                const opt = document.createElement('option');
+                opt.value = y;
+                opt.textContent = y;
+                yearFilter.appendChild(opt);
+            });
+
+            function render() {
+                const query = search.value.toLowerCase();
+                const year = yearFilter.value;
+
+                let filtered = offices;
+                if (query) {
+                    filtered = filtered.filter(o => o.office.toLowerCase().includes(query));
+                }
+                if (year) {
+                    filtered = filtered.filter(o => o.years_active.includes(year));
+                    // Sort by that year's spending
+                    filtered.sort((a, b) => (b.annual_spending[year] || 0) - (a.annual_spending[year] || 0));
+                }
+
+                countEl.textContent = `Showing ${filtered.length} of ${offices.length} offices`;
+
+                tbody.innerHTML = filtered.slice(0, 200).map(o => {
+                    const total = year ? (o.annual_spending[year] || 0) : o.total_spending;
+                    return `<tr>
+                        <td>${o.office}</td>
+                        <td class="amount">${fmtFull(total)}</td>
+                        <td>${o.years_active.join(', ')}</td>
+                    </tr>`;
+                }).join('');
+            }
+
+            search.addEventListener('input', render);
+            yearFilter.addEventListener('change', render);
+            render();
+        }
+
+        async function initVendors() {
+            const vendors = await loadJSON('top_vendors.json');
+            const tbody = document.getElementById('vendor-tbody');
+            const search = document.getElementById('vendor-search');
+            const countEl = document.getElementById('vendor-count');
+
+            function render() {
+                const query = search.value.toLowerCase();
+                let filtered = vendors;
+                if (query) {
+                    filtered = filtered.filter(v => v.name.toLowerCase().includes(query));
+                }
+
+                countEl.textContent = `Showing ${filtered.length} of ${vendors.length} vendors`;
+
+                tbody.innerHTML = filtered.map(v => `<tr>
+                    <td>${v.name}</td>
+                    <td class="amount">${fmtFull(v.total)}</td>
+                    <td class="amount">${fmtInt(v.transactions)}</td>
+                    <td>${v.first_seen || ''}</td>
+                    <td>${v.last_seen || ''}</td>
+                </tr>`).join('');
+            }
+
+            search.addEventListener('input', render);
+            render();
+        }
+
+        async function initCategories() {
+            const cats = await loadJSON('categories.json');
+            const total = cats.reduce((s, c) => s + c.total, 0);
+
+            document.getElementById('cat-tbody').innerHTML = cats.filter(c => c.total !== 0).map(c => `<tr>
+                <td>${c.category}</td>
+                <td class="amount">${fmtFull(c.total)}</td>
+                <td class="amount">${fmtInt(c.transactions)}</td>
+                <td class="amount">${(c.total / total * 100).toFixed(1)}%</td>
+            </tr>`).join('');
+
+            const topCats = cats.filter(c => c.total > 0).slice(0, 10);
+            new Chart(document.getElementById('chart-cat-bar'), {
+                type: 'bar',
+                data: {
+                    labels: topCats.map(c => c.category.length > 30 ? c.category.substring(0, 30) + '...' : c.category),
+                    datasets: [{
+                        data: topCats.map(c => c.total),
+                        backgroundColor: COLORS,
+                        borderRadius: 4,
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    plugins: {
+                        legend: { display: false },
+                        tooltip: { callbacks: { label: ctx => fmtFull(ctx.raw) } }
+                    },
+                    scales: {
+                        x: { ticks: { callback: v => fmt(v) } }
+                    }
+                }
+            });
+        }
+
+        async function initDownload() {
+            const exports = await loadJSON('exports.json');
+            const grid = document.getElementById('download-grid');
+
+            // Master file info
+            const totalRecords = exports.reduce((s, e) => s + e.records, 0);
+            const totalSize = exports.reduce((s, e) => s + e.size_mb, 0);
+            document.getElementById('master-export-info').textContent =
+                `${fmtInt(totalRecords)} records, ~${totalSize.toFixed(0)} MB CSV`;
+
+            grid.innerHTML = exports
+                .sort((a, b) => b.year - a.year)
+                .map(e => `
+                <div class="download-card">
+                    <div class="info">
+                        <h4>${e.year}</h4>
+                        <p>${fmtInt(e.records)} records &middot; ${e.size_mb} MB</p>
+                    </div>
+                    <a href="exports/${e.filename}" class="btn btn-outline" download>CSV</a>
+                </div>
+            `).join('');
+        }
+
+        // Hash-based routing
+        function checkHash() {
+            const hash = window.location.hash.replace('#', '') || 'overview';
+            const link = document.querySelector(`nav a[data-section="${hash}"]`);
+            if (link) link.click();
+        }
+
+        window.addEventListener('hashchange', checkHash);
+        checkHash();
+    </script>
+</body>
+</html>

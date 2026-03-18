@@ -1,0 +1,128 @@
+[
+  {
+    "year": 2005,
+    "filename": "house_disbursements_2005.csv",
+    "records": 1,
+    "size_mb": 0.0
+  },
+  {
+    "year": 2006,
+    "filename": "house_disbursements_2006.csv",
+    "records": 1,
+    "size_mb": 0.0
+  },
+  {
+    "year": 2007,
+    "filename": "house_disbursements_2007.csv",
+    "records": 1,
+    "size_mb": 0.0
+  },
+  {
+    "year": 2009,
+    "filename": "house_disbursements_2009.csv",
+    "records": 6,
+    "size_mb": 0.0
+  },
+  {
+    "year": 2010,
+    "filename": "house_disbursements_2010.csv",
+    "records": 74,
+    "size_mb": 0.0
+  },
+  {
+    "year": 2011,
+    "filename": "house_disbursements_2011.csv",
+    "records": 403,
+    "size_mb": 0.1
+  },
+  {
+    "year": 2012,
+    "filename": "house_disbursements_2012.csv",
+    "records": 210,
+    "size_mb": 0.0
+  },
+  {
+    "year": 2013,
+    "filename": "house_disbursements_2013.csv",
+    "records": 255,
+    "size_mb": 0.0
+  },
+  {
+    "year": 2014,
+    "filename": "house_disbursements_2014.csv",
+    "records": 632,
+    "size_mb": 0.1
+  },
+  {
+    "year": 2015,
+    "filename": "house_disbursements_2015.csv",
+    "records": 33284,
+    "size_mb": 5.1
+  },
+  {
+    "year": 2016,
+    "filename": "house_disbursements_2016.csv",
+    "records": 327428,
+    "size_mb": 49.6
+  },
+  {
+    "year": 2017,
+    "filename": "house_disbursements_2017.csv",
+    "records": 343223,
+    "size_mb": 52.1
+  },
+  {
+    "year": 2018,
+    "filename": "house_disbursements_2018.csv",
+    "records": 331413,
+    "size_mb": 50.2
+  },
+  {
+    "year": 2019,
+    "filename": "house_disbursements_2019.csv",
+    "records": 393473,
+    "size_mb": 59.6
+  },
+  {
+    "year": 2020,
+    "filename": "house_disbursements_2020.csv",
+    "records": 291432,
+    "size_mb": 44.6
+  },
+  {
+    "year": 2021,
+    "filename": "house_disbursements_2021.csv",
+    "records": 351631,
+    "size_mb": 54.1
+  },
+  {
+    "year": 2022,
+    "filename": "house_disbursements_2022.csv",
+    "records": 398590,
+    "size_mb": 60.3
+  },
+  {
+    "year": 2023,
+    "filename": "house_disbursements_2023.csv",
+    "records": 505926,
+    "size_mb": 78.2
+  },
+  {
+    "year": 2024,
+    "filename": "house_disbursements_2024.csv",
+    "records": 485466,
+    "size_mb": 74.5
+  },
+  {
+    "year": 2025,
+    "filename": "house_disbursements_2025.csv",
+    "records": 416117,
+    "size_mb": 64.1
+  },
+  {
+    "year": 2026,
+    "filename": "house_disbursements_2026.csv",
+    "records": 9492,
+    "size_mb": 1.6
+  }
+]

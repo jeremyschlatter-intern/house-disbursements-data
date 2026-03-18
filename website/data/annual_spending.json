@@ -1,0 +1,107 @@
+[
+  {
+    "year": 2005,
+    "total": 3000.0,
+    "transactions": 1
+  },
+  {
+    "year": 2006,
+    "total": 7005.48,
+    "transactions": 1
+  },
+  {
+    "year": 2007,
+    "total": 5982.8,
+    "transactions": 1
+  },
+  {
+    "year": 2009,
+    "total": 586.34,
+    "transactions": 6
+  },
+  {
+    "year": 2010,
+    "total": 13832.83,
+    "transactions": 74
+  },
+  {
+    "year": 2011,
+    "total": 175049.52,
+    "transactions": 403
+  },
+  {
+    "year": 2012,
+    "total": 29100.55,
+    "transactions": 210
+  },
+  {
+    "year": 2013,
+    "total": 63639.46,
+    "transactions": 255
+  },
+  {
+    "year": 2014,
+    "total": 462830.94,
+    "transactions": 632
+  },
+  {
+    "year": 2015,
+    "total": 36706058.39,
+    "transactions": 33284
+  },
+  {
+    "year": 2016,
+    "total": 679459887.14,
+    "transactions": 327428
+  },
+  {
+    "year": 2017,
+    "total": 708052711.48,
+    "transactions": 343223
+  },
+  {
+    "year": 2018,
+    "total": 718939709.23,
+    "transactions": 331413
+  },
+  {
+    "year": 2019,
+    "total": 757450143.43,
+    "transactions": 393473
+  },
+  {
+    "year": 2020,
+    "total": 762872579.18,
+    "transactions": 291432
+  },
+  {
+    "year": 2021,
+    "total": 847075239.85,
+    "transactions": 351631
+  },
+  {
+    "year": 2022,
+    "total": 1160173389.1,
+    "transactions": 398590
+  },
+  {
+    "year": 2023,
+    "total": 1819266034.55,
+    "transactions": 505926
+  },
+  {
+    "year": 2024,
+    "total": 1811186079.67,
+    "transactions": 485466
+  },
+  {
+    "year": 2025,
+    "total": 1696718915.99,
+    "transactions": 416117
+  },
+  {
+    "year": 2026,
+    "total": 157246875.43,
+    "transactions": 9492
+  }
+]

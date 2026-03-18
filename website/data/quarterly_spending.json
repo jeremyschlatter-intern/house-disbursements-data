@@ -1,5 +1,213 @@
 [
   {
+    "quarter": "2009Q3",
+    "total": 329706381.79,
+    "transactions": 129095,
+    "personnel": 175130327.29,
+    "travel": 7588513.52,
+    "franked_mail": 6014438.55
+  },
+  {
+    "quarter": "2009Q4",
+    "total": 350845765.28,
+    "transactions": 120840,
+    "personnel": 197022575.1,
+    "travel": 6734906.59,
+    "franked_mail": 6490319.43
+  },
+  {
+    "quarter": "2010Q1",
+    "total": 342239464.64,
+    "transactions": 137735,
+    "personnel": 180261502.34,
+    "travel": 6429463.5,
+    "franked_mail": 10173774.0
+  },
+  {
+    "quarter": "2010Q2",
+    "total": 336409109.27,
+    "transactions": 131352,
+    "personnel": 179738138.17,
+    "travel": 7680237.1,
+    "franked_mail": 9102993.2
+  },
+  {
+    "quarter": "2010Q3",
+    "total": 348589267.91,
+    "transactions": 130052,
+    "personnel": 178841893.59,
+    "travel": 8250876.26,
+    "franked_mail": 11960012.29
+  },
+  {
+    "quarter": "2010Q4",
+    "total": 344543258.27,
+    "transactions": 101711,
+    "personnel": 204268308.7,
+    "travel": 6459187.7,
+    "franked_mail": 1429148.32
+  },
+  {
+    "quarter": "2011Q1",
+    "total": 326336651.79,
+    "transactions": 119231,
+    "personnel": 175598805.8,
+    "travel": 6668122.13,
+    "franked_mail": 2814503.81
+  },
+  {
+    "quarter": "2011Q2",
+    "total": 310628115.83,
+    "transactions": 112855,
+    "personnel": 170513649.87,
+    "travel": 7538332.11,
+    "franked_mail": 3715050.92
+  },
+  {
+    "quarter": "2011Q3",
+    "total": 313776791.19,
+    "transactions": 105990,
+    "personnel": 172070988.22,
+    "travel": 6732969.49,
+    "franked_mail": 4463841.2
+  },
+  {
+    "quarter": "2011Q4",
+    "total": 349148118.08,
+    "transactions": 103582,
+    "personnel": 186696994.88,
+    "travel": 7139104.15,
+    "franked_mail": 5800897.4
+  },
+  {
+    "quarter": "2012Q1",
+    "total": 328965278.34,
+    "transactions": 118910,
+    "personnel": 170736492.05,
+    "travel": 6634543.26,
+    "franked_mail": 8038388.34
+  },
+  {
+    "quarter": "2012Q2",
+    "total": 303510107.92,
+    "transactions": 102790,
+    "personnel": 168669741.52,
+    "travel": 6920195.98,
+    "franked_mail": 5827225.25
+  },
+  {
+    "quarter": "2012Q3",
+    "total": 299792286.86,
+    "transactions": 93360,
+    "personnel": 168513714.33,
+    "travel": 6372795.61,
+    "franked_mail": 3171373.68
+  },
+  {
+    "quarter": "2012Q4",
+    "total": 321226906.62,
+    "transactions": 90337,
+    "personnel": 185744743.55,
+    "travel": 6046378.58,
+    "franked_mail": 4194040.47
+  },
+  {
+    "quarter": "2013Q1",
+    "total": 298573446.81,
+    "transactions": 107854,
+    "personnel": 166297973.01,
+    "travel": 6432766.68,
+    "franked_mail": 2173280.57
+  },
+  {
+    "quarter": "2013Q2",
+    "total": 282627703.66,
+    "transactions": 95638,
+    "personnel": 161689255.55,
+    "travel": 6145679.18,
+    "franked_mail": 2027840.21
+  },
+  {
+    "quarter": "2013Q3",
+    "total": 283002166.4,
+    "transactions": 96677,
+    "personnel": 161754448.02,
+    "travel": 6503828.03,
+    "franked_mail": 2106223.84
+  },
+  {
+    "quarter": "2013Q4",
+    "total": 297628834.67,
+    "transactions": 88785,
+    "personnel": 172549303.6,
+    "travel": 5532310.84,
+    "franked_mail": 2799319.14
+  },
+  {
+    "quarter": "2014Q1",
+    "total": 292556456.05,
+    "transactions": 102354,
+    "personnel": 161128052.11,
+    "travel": 5545926.5,
+    "franked_mail": 5303249.37
+  },
+  {
+    "quarter": "2014Q2",
+    "total": 276438319.44,
+    "transactions": 94473,
+    "personnel": 160271955.51,
+    "travel": 7031906.96,
+    "franked_mail": 3452639.43
+  },
+  {
+    "quarter": "2014Q3",
+    "total": 281338673.25,
+    "transactions": 90252,
+    "personnel": 161147365.71,
+    "travel": 6569643.92,
+    "franked_mail": 4568536.62
+  },
+  {
+    "quarter": "2014Q4",
+    "total": 308638082.77,
+    "transactions": 91131,
+    "personnel": 177963935.68,
+    "travel": 6500310.22,
+    "franked_mail": 1025230.51
+  },
+  {
+    "quarter": "2015Q1",
+    "total": 295405334.73,
+    "transactions": 102726,
+    "personnel": 162587429.83,
+    "travel": 5501989.26,
+    "franked_mail": 1665898.86
+  },
+  {
+    "quarter": "2015Q2",
+    "total": 277430411.79,
+    "transactions": 95493,
+    "personnel": 160914155.8,
+    "travel": 7032352.38,
+    "franked_mail": 2009950.69
+  },
+  {
+    "quarter": "2015Q3",
+    "total": 276760268.96,
+    "transactions": 91563,
+    "personnel": 162242847.09,
+    "travel": 6147612.34,
+    "franked_mail": 2603141.47
+  },
+  {
+    "quarter": "2015Q4",
+    "total": 313819597.16,
+    "transactions": 96048,
+    "personnel": 180506867.58,
+    "travel": 6688514.35,
+    "franked_mail": 3581626.44
+  },
+  {
     "quarter": "2016Q1",
     "total": 300739507.71,
     "transactions": 103132,

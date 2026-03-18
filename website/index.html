@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>House Disbursements Data Explorer</title>
-    <meta name="description" content="Explore 10 years of U.S. House of Representatives spending data. Search member offices, vendors, and categories across 4.3 million transactions.">
+    <meta name="description" content="Explore 16 years of U.S. House of Representatives spending data. Search member offices, vendors, and categories across 4.3 million transactions.">
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
     <style>
         :root {
@@ -106,7 +106,7 @@
             <div class="seal">&#127963;</div>
             <div>
                 <h1>House Disbursements Data Explorer</h1>
-                <p>U.S. House of Representatives Spending Data, 2016&ndash;2025</p>
+                <p>U.S. House of Representatives Spending Data, 2009&ndash;2025</p>
             </div>
         </div>
     </header>
@@ -128,11 +128,11 @@
         <!-- OVERVIEW -->
         <div id="overview" class="section active">
             <div class="info-banner">
-                This dataset includes <strong>40 quarters</strong> of official House disbursement data (Q1 2016 &ndash; Q4 2025) published by the Chief Administrative Officer.
+                This dataset includes <strong>66 quarters</strong> of official House disbursement data (Q1 2016 &ndash; Q4 2025) published by the Chief Administrative Officer.
                 All data sourced from <a href="https://www.house.gov/the-house-explained/open-government/statement-of-disbursements" target="_blank">house.gov</a>.
             </div>
             <div class="stats-grid" id="stats-grid">
-                <div class="stat-card"><div class="label">Total Spending</div><div class="value" id="stat-spending">...</div><div class="subtext">2016&ndash;2025</div></div>
+                <div class="stat-card"><div class="label">Total Spending</div><div class="value" id="stat-spending">...</div><div class="subtext">2009&ndash;2025</div></div>
                 <div class="stat-card"><div class="label">Detail Transactions</div><div class="value" id="stat-records">...</div><div class="subtext">Individual disbursement records</div></div>
                 <div class="stat-card"><div class="label">Organizations</div><div class="value" id="stat-orgs">...</div><div class="subtext">Distinct offices tracked</div></div>
                 <div class="stat-card"><div class="label">Vendors</div><div class="value" id="stat-vendors">...</div><div class="subtext">Unique payees</div></div>
@@ -223,8 +223,8 @@
             <div class="info-banner">All data derived from official CSV files published by the U.S. House Chief Administrative Officer. Public domain.</div>
             <h3 style="margin-top:1.5rem">Complete Dataset</h3>
             <div class="download-card" style="margin-bottom:2rem">
-                <div class="info"><h4>All Disbursements (2016&ndash;2025)</h4><p id="master-export-info">Loading...</p></div>
-                <a href="exports/house_disbursements_all_2016_2025.csv" class="btn" download>Download CSV</a>
+                <div class="info"><h4>All Disbursements (2009&ndash;2025)</h4><p id="master-export-info">Loading...</p></div>
+                <a href="exports/house_disbursements_all_2009_2025.csv" class="btn" download>Download CSV</a>
             </div>
             <h3>By Year</h3>
             <div class="download-grid" id="download-grid"><div class="loading" style="text-align:center;padding:2rem;color:var(--gray-500)">Loading...</div></div>
@@ -240,7 +240,8 @@
 
                 <h3>Data Coverage</h3>
                 <ul>
-                    <li><strong>2016&ndash;2025 (this dataset):</strong> Official CSV files published by the House Chief Administrative Officer. 40 quarters, 4.3 million detail records, $15.15 billion in spending.</li>
+                    <li><strong>2009&ndash;2015 (this dataset):</strong> Born-digital PDF reports from house.gov, text-extracted and parsed using the <a href="https://github.com/propublica/disbursements" target="_blank">ProPublica/Sunlight Foundation parser</a>. 26 quarters, 2.75 million records.</li>
+                    <li><strong>2016&ndash;2025 (this dataset):</strong> Official CSV files published by the House Chief Administrative Officer. 40 quarters, 4.3 million records.</li>
                     <li><strong>2009&ndash;2015:</strong> Born-digital PDF reports available from house.gov. These can be parsed using the <a href="https://github.com/propublica/disbursements" target="_blank">ProPublica/Sunlight Foundation parser</a>.</li>
                     <li><strong>1970&ndash;2008:</strong> Scanned PDFs digitized by the <a href="https://guides.bpl.org/Congress/Disbursements" target="_blank">Boston Public Library</a> and available on the <a href="https://archive.org/search?query=title%3A%22statement+of+disbursements%22" target="_blank">Internet Archive</a>. OCR quality varies.</li>
                 </ul>
@@ -281,7 +282,7 @@
 
     <footer>
         <div class="container">
-            <p>Data sourced from the <a href="https://www.house.gov/the-house-explained/open-government/statement-of-disbursements" target="_blank">U.S. House of Representatives</a>. 40 quarters of official disbursement reports (2016&ndash;2025).</p>
+            <p>Data sourced from the <a href="https://www.house.gov/the-house-explained/open-government/statement-of-disbursements" target="_blank">U.S. House of Representatives</a>. 66 quarters of official disbursement reports (2009&ndash;2025).</p>
             <p style="margin-top:0.5rem">Open-data project. All source data is public domain.</p>
         </div>
     </footer>
@@ -347,7 +348,7 @@ async function initOverview() {
     document.getElementById('stat-orgs').textContent = fmtInt(summary.total_organizations);
     document.getElementById('stat-vendors').textContent = fmtInt(summary.total_vendors);
 
-    const mainYears = annual.filter(a => a.year >= 2016 && a.year <= 2025);
+    const mainYears = annual.filter(a => a.year >= 2009 && a.year <= 2025);
     new Chart(document.getElementById('chart-annual'), {
         type: 'bar',
         data: { labels: mainYears.map(a => a.year), datasets: [{ label: 'Total', data: mainYears.map(a => a.total), backgroundColor: '#2c5282', borderRadius: 4 }] },
@@ -372,7 +373,7 @@ async function initOverview() {
 async function initTrends() {
     const catSpending = await loadJSON('category_spending.json');
     const quarterly = await loadJSON('quarterly_spending.json');
-    const years = Object.keys(catSpending).filter(y => +y >= 2016 && +y <= 2025).sort();
+    const years = Object.keys(catSpending).filter(y => +y >= 2009 && +y <= 2025).sort();
     const mainCats = ['PERSONNEL COMPENSATION','PERSONNEL BENEFITS','OTHER SERVICES','RENT  COMMUNICATION  UTILITIES','EQUIPMENT','SUPPLIES AND MATERIALS','TRAVEL','PRINTING AND REPRODUCTION','FRANKED MAIL'];
 
     new Chart(document.getElementById('chart-stacked-annual'), {

@@ -1,49 +1,59 @@
 {
   "2016": {
-    "EQUIPMENT": {
-      "total": 6711797.18,
-      "avg": 15082.69,
-      "num_offices": 445
+    "RENT, COMMUNICATION, UTILITIES": {
+      "total": 4190068.81,
+      "avg": 167602.75,
+      "num_offices": 25
     },
-    "FRANKED MAIL": {
-      "total": 12516542.0,
-      "avg": 27814.54,
-      "num_offices": 450
+    "SUPPLIES AND MATERIALS": {
+      "total": 15072569.24,
+      "avg": 31335.9,
+      "num_offices": 481
+    },
+    "TRAVEL": {
+      "total": 21502891.98,
+      "avg": 46342.44,
+      "num_offices": 464
+    },
+    "EQUIPMENT": {
+      "total": 11391073.62,
+      "avg": 24288.0,
+      "num_offices": 469
     },
     "OTHER SERVICES": {
-      "total": 15708521.28,
-      "avg": 34907.83,
-      "num_offices": 450
+      "total": 18641645.54,
+      "avg": 39411.51,
+      "num_offices": 473
     },
     "PERSONNEL COMPENSATION": {
-      "total": 409975059.37,
-      "avg": 909035.61,
-      "num_offices": 451
+      "total": 441890323.73,
+      "avg": 944210.09,
+      "num_offices": 468
     },
     "PRINTING AND REPRODUCTION": {
-      "total": 13630564.36,
-      "avg": 30561.8,
-      "num_offices": 446
+      "total": 13651723.99,
+      "avg": 29807.26,
+      "num_offices": 458
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 8661.83,
+      "avg": 333.15,
+      "num_offices": 26
+    },
+    "FRANKED MAIL": {
+      "total": 12532236.76,
+      "avg": 27664.98,
+      "num_offices": 453
+    },
+    "PERSONNEL BENEFITS": {
+      "total": 21277041.58,
+      "avg": 10638520.79,
+      "num_offices": 2
     },
     "RENT  COMMUNICATION  UTILITIES": {
       "total": 41286426.19,
       "avg": 91544.18,
       "num_offices": 451
-    },
-    "SUPPLIES AND MATERIALS": {
-      "total": 13677251.24,
-      "avg": 30126.1,
-      "num_offices": 454
-    },
-    "TRAVEL": {
-      "total": 21321066.05,
-      "avg": 47275.09,
-      "num_offices": 451
-    },
-    "TRANSPORTATION OF THINGS": {
-      "total": 7666.79,
-      "avg": 333.34,
-      "num_offices": 23
     },
     "BENEFITS TO FORMER PERSONNEL": {
       "total": 0.0,

@@ -1,18 +1,23 @@
 [
   {
     "category": "PERSONNEL COMPENSATION",
-    "total": 8444097738.05,
-    "transactions": 656627
+    "total": 12946959202.95,
+    "transactions": 1042224
   },
   {
     "category": "PERSONNEL BENEFITS",
-    "total": 3149199826.58,
-    "transactions": 254616
+    "total": 4793971840.12,
+    "transactions": 465069
   },
   {
     "category": "OTHER SERVICES",
-    "total": 1086340971.76,
-    "transactions": 238815
+    "total": 1574060734.02,
+    "transactions": 400518
+  },
+  {
+    "category": "EQUIPMENT",
+    "total": 997486185.67,
+    "transactions": 235927
   },
   {
     "category": "RENT  COMMUNICATION  UTILITIES",
@@ -20,29 +25,29 @@
     "transactions": 764934
   },
   {
-    "category": "EQUIPMENT",
-    "total": 623495340.58,
-    "transactions": 132439
-  },
-  {
     "category": "SUPPLIES AND MATERIALS",
-    "total": 401110236.2,
-    "transactions": 822694
+    "total": 602914250.08,
+    "transactions": 1366899
   },
   {
     "category": "TRAVEL",
-    "total": 290087693.16,
-    "transactions": 1148367
+    "total": 462916159.8,
+    "transactions": 1672519
+  },
+  {
+    "category": "RENT, COMMUNICATION, UTILITIES",
+    "total": 461023280.17,
+    "transactions": 641316
   },
   {
     "category": "PRINTING AND REPRODUCTION",
-    "total": 265348853.24,
-    "transactions": 159620
+    "total": 393050788.85,
+    "transactions": 266826
   },
   {
     "category": "FRANKED MAIL",
-    "total": 160758151.92,
-    "transactions": 104969
+    "total": 277271095.93,
+    "transactions": 177046
   },
   {
     "category": "BENEFITS TO FORMER PERSONNEL",
@@ -51,8 +56,8 @@
   },
   {
     "category": "TRANSPORTATION OF THINGS",
-    "total": 1132529.96,
-    "transactions": 1409
+    "total": 1854603.34,
+    "transactions": 2046
   },
   {
     "category": "INSURANCE CLAIMS & INDEMNITIES",

@@ -53,7 +53,7 @@ def main():
         "total_spending": round(total_spending, 2),
         "total_organizations": total_orgs,
         "total_vendors": total_vendors,
-        "quarters_covered": "Q1 2016 - Q4 2025",
+        "quarters_covered": "Q3 2009 - Q4 2025",
         "data_source": "U.S. House of Representatives Chief Administrative Officer",
         "last_updated": "2026-03-18",
     }

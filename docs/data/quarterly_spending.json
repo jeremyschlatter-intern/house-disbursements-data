@@ -1,0 +1,530 @@
+[
+  {
+    "quarter": "2009Q3",
+    "total": 329706381.79,
+    "transactions": 129095,
+    "personnel": 175130327.29,
+    "travel": 7588513.52,
+    "franked_mail": 6014438.55
+  },
+  {
+    "quarter": "2009Q4",
+    "total": 350845765.28,
+    "transactions": 120840,
+    "personnel": 197022575.1,
+    "travel": 6734906.59,
+    "franked_mail": 6490319.43
+  },
+  {
+    "quarter": "2010Q1",
+    "total": 342239464.64,
+    "transactions": 137735,
+    "personnel": 180261502.34,
+    "travel": 6429463.5,
+    "franked_mail": 10173774.0
+  },
+  {
+    "quarter": "2010Q2",
+    "total": 336409109.27,
+    "transactions": 131352,
+    "personnel": 179738138.17,
+    "travel": 7680237.1,
+    "franked_mail": 9102993.2
+  },
+  {
+    "quarter": "2010Q3",
+    "total": 348589267.91,
+    "transactions": 130052,
+    "personnel": 178841893.59,
+    "travel": 8250876.26,
+    "franked_mail": 11960012.29
+  },
+  {
+    "quarter": "2010Q4",
+    "total": 344543258.27,
+    "transactions": 101711,
+    "personnel": 204268308.7,
+    "travel": 6459187.7,
+    "franked_mail": 1429148.32
+  },
+  {
+    "quarter": "2011Q1",
+    "total": 326336651.79,
+    "transactions": 119231,
+    "personnel": 175598805.8,
+    "travel": 6668122.13,
+    "franked_mail": 2814503.81
+  },
+  {
+    "quarter": "2011Q2",
+    "total": 310628115.83,
+    "transactions": 112855,
+    "personnel": 170513649.87,
+    "travel": 7538332.11,
+    "franked_mail": 3715050.92
+  },
+  {
+    "quarter": "2011Q3",
+    "total": 313776791.19,
+    "transactions": 105990,
+    "personnel": 172070988.22,
+    "travel": 6732969.49,
+    "franked_mail": 4463841.2
+  },
+  {
+    "quarter": "2011Q4",
+    "total": 349148118.08,
+    "transactions": 103582,
+    "personnel": 186696994.88,
+    "travel": 7139104.15,
+    "franked_mail": 5800897.4
+  },
+  {
+    "quarter": "2012Q1",
+    "total": 328965278.34,
+    "transactions": 118910,
+    "personnel": 170736492.05,
+    "travel": 6634543.26,
+    "franked_mail": 8038388.34
+  },
+  {
+    "quarter": "2012Q2",
+    "total": 303510107.92,
+    "transactions": 102790,
+    "personnel": 168669741.52,
+    "travel": 6920195.98,
+    "franked_mail": 5827225.25
+  },
+  {
+    "quarter": "2012Q3",
+    "total": 299792286.86,
+    "transactions": 93360,
+    "personnel": 168513714.33,
+    "travel": 6372795.61,
+    "franked_mail": 3171373.68
+  },
+  {
+    "quarter": "2012Q4",
+    "total": 321226906.62,
+    "transactions": 90337,
+    "personnel": 185744743.55,
+    "travel": 6046378.58,
+    "franked_mail": 4194040.47
+  },
+  {
+    "quarter": "2013Q1",
+    "total": 298573446.81,
+    "transactions": 107854,
+    "personnel": 166297973.01,
+    "travel": 6432766.68,
+    "franked_mail": 2173280.57
+  },
+  {
+    "quarter": "2013Q2",
+    "total": 282627703.66,
+    "transactions": 95638,
+    "personnel": 161689255.55,
+    "travel": 6145679.18,
+    "franked_mail": 2027840.21
+  },
+  {
+    "quarter": "2013Q3",
+    "total": 283002166.4,
+    "transactions": 96677,
+    "personnel": 161754448.02,
+    "travel": 6503828.03,
+    "franked_mail": 2106223.84
+  },
+  {
+    "quarter": "2013Q4",
+    "total": 297628834.67,
+    "transactions": 88785,
+    "personnel": 172549303.6,
+    "travel": 5532310.84,
+    "franked_mail": 2799319.14
+  },
+  {
+    "quarter": "2014Q1",
+    "total": 292556456.05,
+    "transactions": 102354,
+    "personnel": 161128052.11,
+    "travel": 5545926.5,
+    "franked_mail": 5303249.37
+  },
+  {
+    "quarter": "2014Q2",
+    "total": 276438319.44,
+    "transactions": 94473,
+    "personnel": 160271955.51,
+    "travel": 7031906.96,
+    "franked_mail": 3452639.43
+  },
+  {
+    "quarter": "2014Q3",
+    "total": 281338673.25,
+    "transactions": 90252,
+    "personnel": 161147365.71,
+    "travel": 6569643.92,
+    "franked_mail": 4568536.62
+  },
+  {
+    "quarter": "2014Q4",
+    "total": 308638082.77,
+    "transactions": 91131,
+    "personnel": 177963935.68,
+    "travel": 6500310.22,
+    "franked_mail": 1025230.51
+  },
+  {
+    "quarter": "2015Q1",
+    "total": 295405334.73,
+    "transactions": 102726,
+    "personnel": 162587429.83,
+    "travel": 5501989.26,
+    "franked_mail": 1665898.86
+  },
+  {
+    "quarter": "2015Q2",
+    "total": 277430411.79,
+    "transactions": 95493,
+    "personnel": 160914155.8,
+    "travel": 7032352.38,
+    "franked_mail": 2009950.69
+  },
+  {
+    "quarter": "2015Q3",
+    "total": 276760268.96,
+    "transactions": 91563,
+    "personnel": 162242847.09,
+    "travel": 6147612.34,
+    "franked_mail": 2603141.47
+  },
+  {
+    "quarter": "2015Q4",
+    "total": 313819597.16,
+    "transactions": 96048,
+    "personnel": 180506867.58,
+    "travel": 6688514.35,
+    "franked_mail": 3581626.44
+  },
+  {
+    "quarter": "2016Q1",
+    "total": 300739507.71,
+    "transactions": 103132,
+    "personnel": 164126353.53,
+    "travel": 5015510.67,
+    "franked_mail": 5338506.11
+  },
+  {
+    "quarter": "2016Q2",
+    "total": 285471422.42,
+    "transactions": 99251,
+    "personnel": 163719066.33,
+    "travel": 6475358.07,
+    "franked_mail": 3862058.34
+  },
+  {
+    "quarter": "2016Q3",
+    "total": 295855792.19,
+    "transactions": 92555,
+    "personnel": 165001565.54,
+    "travel": 5740055.81,
+    "franked_mail": 4850628.71
+  },
+  {
+    "quarter": "2016Q4",
+    "total": 309781665.0,
+    "transactions": 90675,
+    "personnel": 185926308.2,
+    "travel": 5665864.31,
+    "franked_mail": 889245.0
+  },
+  {
+    "quarter": "2017Q1",
+    "total": 297071463.52,
+    "transactions": 103089,
+    "personnel": 166242564.65,
+    "travel": 5204404.72,
+    "franked_mail": 1911916.28
+  },
+  {
+    "quarter": "2017Q2",
+    "total": 290113628.35,
+    "transactions": 98669,
+    "personnel": 166336452.53,
+    "travel": 6671097.83,
+    "franked_mail": 1446102.65
+  },
+  {
+    "quarter": "2017Q3",
+    "total": 294823369.07,
+    "transactions": 97734,
+    "personnel": 168499812.92,
+    "travel": 6982568.97,
+    "franked_mail": 2086225.25
+  },
+  {
+    "quarter": "2017Q4",
+    "total": 325510451.21,
+    "transactions": 94086,
+    "personnel": 192065364.55,
+    "travel": 6164652.65,
+    "franked_mail": 3294758.11
+  },
+  {
+    "quarter": "2018Q1",
+    "total": 322532579.48,
+    "transactions": 110230,
+    "personnel": 172593272.4,
+    "travel": 6246731.24,
+    "franked_mail": 6782839.37
+  },
+  {
+    "quarter": "2018Q2",
+    "total": 300803206.42,
+    "transactions": 97856,
+    "personnel": 171247690.72,
+    "travel": 6866284.08,
+    "franked_mail": 3715521.53
+  },
+  {
+    "quarter": "2018Q3",
+    "total": 312938155.28,
+    "transactions": 94055,
+    "personnel": 172097581.66,
+    "travel": 6741258.3,
+    "franked_mail": 5740377.22
+  },
+  {
+    "quarter": "2018Q4",
+    "total": 340556027.2,
+    "transactions": 93043,
+    "personnel": 198066271.6,
+    "travel": 6141816.66,
+    "franked_mail": 1410029.42
+  },
+  {
+    "quarter": "2019Q1",
+    "total": 315595375.91,
+    "transactions": 108131,
+    "personnel": 174334280.46,
+    "travel": 6651565.79,
+    "franked_mail": 1928720.7
+  },
+  {
+    "quarter": "2019Q2",
+    "total": 313464493.15,
+    "transactions": 111977,
+    "personnel": 177386355.49,
+    "travel": 7562612.33,
+    "franked_mail": 1830593.61
+  },
+  {
+    "quarter": "2019Q3",
+    "total": 324949987.18,
+    "transactions": 111086,
+    "personnel": 181333623.0,
+    "travel": 7507057.38,
+    "franked_mail": 1978344.91
+  },
+  {
+    "quarter": "2019Q4",
+    "total": 363755818.5,
+    "transactions": 114059,
+    "personnel": 207435219.85,
+    "travel": 7153639.18,
+    "franked_mail": 3789596.86
+  },
+  {
+    "quarter": "2020Q1",
+    "total": 363304597.9,
+    "transactions": 121052,
+    "personnel": 186628574.54,
+    "travel": 6149889.91,
+    "franked_mail": 6088354.56
+  },
+  {
+    "quarter": "2020Q2",
+    "total": 335748377.85,
+    "transactions": 78499,
+    "personnel": 187163859.68,
+    "travel": 2299019.5,
+    "franked_mail": 4075008.23
+  },
+  {
+    "quarter": "2020Q3",
+    "total": 354029929.81,
+    "transactions": 81147,
+    "personnel": 191372048.38,
+    "travel": 2520622.45,
+    "franked_mail": 6087956.77
+  },
+  {
+    "quarter": "2020Q4",
+    "total": 379237541.46,
+    "transactions": 80906,
+    "personnel": 222644099.96,
+    "travel": 2800054.94,
+    "franked_mail": 734557.41
+  },
+  {
+    "quarter": "2021Q1",
+    "total": 347952255.91,
+    "transactions": 96244,
+    "personnel": 193190630.41,
+    "travel": 3738789.67,
+    "franked_mail": 2980829.26
+  },
+  {
+    "quarter": "2021Q2",
+    "total": 339696465.08,
+    "transactions": 92076,
+    "personnel": 192590929.51,
+    "travel": 4043465.26,
+    "franked_mail": 1372672.13
+  },
+  {
+    "quarter": "2021Q3",
+    "total": 359969918.25,
+    "transactions": 97327,
+    "personnel": 198251013.07,
+    "travel": 5242313.24,
+    "franked_mail": 2705085.35
+  },
+  {
+    "quarter": "2021Q4",
+    "total": 401783422.9,
+    "transactions": 102260,
+    "personnel": 232100108.36,
+    "travel": 5701699.69,
+    "franked_mail": 3598285.46
+  },
+  {
+    "quarter": "2022Q1",
+    "total": 391700405.21,
+    "transactions": 110844,
+    "personnel": 205050450.7,
+    "travel": 4399927.03,
+    "franked_mail": 7891026.98
+  },
+  {
+    "quarter": "2022Q2",
+    "total": 395568679.47,
+    "transactions": 110745,
+    "personnel": 223281180.83,
+    "travel": 7383392.05,
+    "franked_mail": 6012562.65
+  },
+  {
+    "quarter": "2022Q3",
+    "total": 422526762.97,
+    "transactions": 120047,
+    "personnel": 228678033.09,
+    "travel": 8770317.11,
+    "franked_mail": 2928418.1
+  },
+  {
+    "quarter": "2022Q4",
+    "total": 476114085.69,
+    "transactions": 106238,
+    "personnel": 274549687.33,
+    "travel": 7908158.16,
+    "franked_mail": 9055708.59
+  },
+  {
+    "quarter": "2023Q1",
+    "total": 440657821.18,
+    "transactions": 126102,
+    "personnel": 231706137.54,
+    "travel": 8671582.12,
+    "franked_mail": 5864216.71
+  },
+  {
+    "quarter": "2023Q2",
+    "total": 418732047.06,
+    "transactions": 122488,
+    "personnel": 232619268.07,
+    "travel": 11319039.93,
+    "franked_mail": 3095394.26
+  },
+  {
+    "quarter": "2023Q3",
+    "total": 450138584.26,
+    "transactions": 126131,
+    "personnel": 245104248.88,
+    "travel": 11029630.01,
+    "franked_mail": 4259857.96
+  },
+  {
+    "quarter": "2023Q4",
+    "total": 485034625.36,
+    "transactions": 117508,
+    "personnel": 278576695.14,
+    "travel": 11069786.95,
+    "franked_mail": 4420281.26
+  },
+  {
+    "quarter": "2024Q1",
+    "total": 488205194.79,
+    "transactions": 137622,
+    "personnel": 247432009.33,
+    "travel": 10268762.59,
+    "franked_mail": 11150411.97
+  },
+  {
+    "quarter": "2024Q2",
+    "total": 441980885.45,
+    "transactions": 124153,
+    "personnel": 249166596.71,
+    "travel": 11613987.3,
+    "franked_mail": 4712275.8
+  },
+  {
+    "quarter": "2024Q3",
+    "total": 474576186.75,
+    "transactions": 120045,
+    "personnel": 253370414.58,
+    "travel": 10513110.78,
+    "franked_mail": 7307205.05
+  },
+  {
+    "quarter": "2024Q4",
+    "total": 514891802.32,
+    "transactions": 121192,
+    "personnel": 293059084.52,
+    "travel": 11834473.81,
+    "franked_mail": 3954605.46
+  },
+  {
+    "quarter": "2025Q1",
+    "total": 480605084.81,
+    "transactions": 126650,
+    "personnel": 255080270.12,
+    "travel": 10226959.76,
+    "franked_mail": 4809576.78
+  },
+  {
+    "quarter": "2025Q2",
+    "total": 447548604.67,
+    "transactions": 126755,
+    "personnel": 251990667.57,
+    "travel": 11344355.56,
+    "franked_mail": 2488699.65
+  },
+  {
+    "quarter": "2025Q3",
+    "total": 469636026.17,
+    "transactions": 124903,
+    "personnel": 254474031.03,
+    "travel": 11258267.88,
+    "franked_mail": 2413768.67
+  },
+  {
+    "quarter": "2025Q4",
+    "total": 480875418.91,
+    "transactions": 94238,
+    "personnel": 289605915.27,
+    "travel": 7189609.47,
+    "franked_mail": 1895928.79
+  }
+]

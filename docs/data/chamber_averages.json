@@ -1,0 +1,517 @@
+{
+  "2016": {
+    "RENT, COMMUNICATION, UTILITIES": {
+      "total": 4190068.81,
+      "avg": 167602.75,
+      "num_offices": 25
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 15072569.24,
+      "avg": 31335.9,
+      "num_offices": 481
+    },
+    "TRAVEL": {
+      "total": 21502891.98,
+      "avg": 46342.44,
+      "num_offices": 464
+    },
+    "EQUIPMENT": {
+      "total": 11391073.62,
+      "avg": 24288.0,
+      "num_offices": 469
+    },
+    "OTHER SERVICES": {
+      "total": 18641645.54,
+      "avg": 39411.51,
+      "num_offices": 473
+    },
+    "PERSONNEL COMPENSATION": {
+      "total": 441890323.73,
+      "avg": 944210.09,
+      "num_offices": 468
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 13651723.99,
+      "avg": 29807.26,
+      "num_offices": 458
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 8661.83,
+      "avg": 333.15,
+      "num_offices": 26
+    },
+    "FRANKED MAIL": {
+      "total": 12532236.76,
+      "avg": 27664.98,
+      "num_offices": 453
+    },
+    "PERSONNEL BENEFITS": {
+      "total": 21277041.58,
+      "avg": 10638520.79,
+      "num_offices": 2
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 41286426.19,
+      "avg": 91544.18,
+      "num_offices": 451
+    },
+    "BENEFITS TO FORMER PERSONNEL": {
+      "total": 0.0,
+      "avg": 0.0,
+      "num_offices": 1
+    }
+  },
+  "2017": {
+    "EQUIPMENT": {
+      "total": 8774703.84,
+      "avg": 19413.06,
+      "num_offices": 452
+    },
+    "OTHER SERVICES": {
+      "total": 25177022.48,
+      "avg": 55824.88,
+      "num_offices": 451
+    },
+    "PERSONNEL COMPENSATION": {
+      "total": 415689681.14,
+      "avg": 917637.27,
+      "num_offices": 453
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 15720386.25,
+      "avg": 34856.73,
+      "num_offices": 451
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 45684790.73,
+      "avg": 100849.43,
+      "num_offices": 453
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 13505529.94,
+      "avg": 29747.86,
+      "num_offices": 454
+    },
+    "FRANKED MAIL": {
+      "total": 11840999.36,
+      "avg": 26430.8,
+      "num_offices": 448
+    },
+    "TRAVEL": {
+      "total": 23760740.5,
+      "avg": 52568.01,
+      "num_offices": 452
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 4591.88,
+      "avg": 120.84,
+      "num_offices": 38
+    },
+    "BENEFITS TO FORMER PERSONNEL": {
+      "total": 0.0,
+      "avg": 0.0,
+      "num_offices": 1
+    }
+  },
+  "2018": {
+    "EQUIPMENT": {
+      "total": 7565989.36,
+      "avg": 16306.01,
+      "num_offices": 464
+    },
+    "OTHER SERVICES": {
+      "total": 15525106.06,
+      "avg": 33315.68,
+      "num_offices": 466
+    },
+    "PERSONNEL COMPENSATION": {
+      "total": 435463593.57,
+      "avg": 942561.89,
+      "num_offices": 462
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 15897301.56,
+      "avg": 34559.35,
+      "num_offices": 460
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 42522554.3,
+      "avg": 90473.52,
+      "num_offices": 470
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 14116149.19,
+      "avg": 29843.87,
+      "num_offices": 473
+    },
+    "TRAVEL": {
+      "total": 23418427.35,
+      "avg": 50254.14,
+      "num_offices": 466
+    },
+    "FRANKED MAIL": {
+      "total": 14510936.41,
+      "avg": 31683.27,
+      "num_offices": 458
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 9855.0,
+      "avg": 219.0,
+      "num_offices": 45
+    },
+    "PERSONNEL BENEFITS": {
+      "total": 185.0,
+      "avg": 185.0,
+      "num_offices": 1
+    }
+  },
+  "2019": {
+    "EQUIPMENT": {
+      "total": 11146822.99,
+      "avg": 24127.32,
+      "num_offices": 462
+    },
+    "OTHER SERVICES": {
+      "total": 27940923.62,
+      "avg": 60347.57,
+      "num_offices": 463
+    },
+    "PERSONNEL COMPENSATION": {
+      "total": 433445023.45,
+      "avg": 934148.76,
+      "num_offices": 464
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 18311792.81,
+      "avg": 39550.31,
+      "num_offices": 463
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 52483207.9,
+      "avg": 112624.91,
+      "num_offices": 466
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 13069255.32,
+      "avg": 28105.93,
+      "num_offices": 465
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 10455.6,
+      "avg": 348.52,
+      "num_offices": 30
+    },
+    "FRANKED MAIL": {
+      "total": 12286646.71,
+      "avg": 26768.29,
+      "num_offices": 459
+    },
+    "TRAVEL": {
+      "total": 23911464.34,
+      "avg": 52094.69,
+      "num_offices": 459
+    }
+  },
+  "2020": {
+    "PERSONNEL COMPENSATION": {
+      "total": 464121912.15,
+      "avg": 1013366.62,
+      "num_offices": 458
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 14159846.79,
+      "avg": 30916.7,
+      "num_offices": 458
+    },
+    "EQUIPMENT": {
+      "total": 9690498.35,
+      "avg": 21534.44,
+      "num_offices": 450
+    },
+    "OTHER SERVICES": {
+      "total": 11927433.08,
+      "avg": 26329.87,
+      "num_offices": 453
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 21272833.42,
+      "avg": 47272.96,
+      "num_offices": 450
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 40389491.04,
+      "avg": 88379.63,
+      "num_offices": 457
+    },
+    "FRANKED MAIL": {
+      "total": 15470721.74,
+      "avg": 34379.38,
+      "num_offices": 450
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 9311.25,
+      "avg": 273.86,
+      "num_offices": 34
+    },
+    "TRAVEL": {
+      "total": 11188308.87,
+      "avg": 25029.77,
+      "num_offices": 447
+    }
+  },
+  "2021": {
+    "PERSONNEL COMPENSATION": {
+      "total": 465127006.61,
+      "avg": 1013348.6,
+      "num_offices": 459
+    },
+    "EQUIPMENT": {
+      "total": 7900400.89,
+      "avg": 17440.18,
+      "num_offices": 453
+    },
+    "OTHER SERVICES": {
+      "total": 26998741.67,
+      "avg": 59207.77,
+      "num_offices": 456
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 21706754.39,
+      "avg": 48237.23,
+      "num_offices": 450
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 21811409.65,
+      "avg": 47727.37,
+      "num_offices": 457
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 8623169.12,
+      "avg": 18827.88,
+      "num_offices": 458
+    },
+    "FRANKED MAIL": {
+      "total": 11276341.92,
+      "avg": 25114.35,
+      "num_offices": 449
+    },
+    "TRAVEL": {
+      "total": 13791956.94,
+      "avg": 30854.49,
+      "num_offices": 447
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 9293.86,
+      "avg": 344.22,
+      "num_offices": 27
+    }
+  },
+  "2022": {
+    "OTHER SERVICES": {
+      "total": 5049876.45,
+      "avg": 10859.95,
+      "num_offices": 465
+    },
+    "PERSONNEL COMPENSATION": {
+      "total": 187521110.27,
+      "avg": 393126.02,
+      "num_offices": 477
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 15719604.53,
+      "avg": 33163.72,
+      "num_offices": 474
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 12613011.23,
+      "avg": 26836.19,
+      "num_offices": 470
+    },
+    "EQUIPMENT": {
+      "total": 10727286.01,
+      "avg": 23320.19,
+      "num_offices": 460
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 14865366.77,
+      "avg": 32245.91,
+      "num_offices": 461
+    },
+    "TRAVEL": {
+      "total": 10258812.28,
+      "avg": 22448.17,
+      "num_offices": 457
+    },
+    "FRANKED MAIL": {
+      "total": 13199208.62,
+      "avg": 29201.79,
+      "num_offices": 452
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 22470.77,
+      "avg": 749.03,
+      "num_offices": 30
+    },
+    "PERSONNEL BENEFITS": {
+      "total": 605.85,
+      "avg": 86.55,
+      "num_offices": 7
+    },
+    "BENEFITS TO FORMER PERSONNEL": {
+      "total": 29.0,
+      "avg": 29.0,
+      "num_offices": 1
+    }
+  },
+  "2023": {
+    "EQUIPMENT": {
+      "total": 8315325.44,
+      "avg": 18275.44,
+      "num_offices": 455
+    },
+    "OTHER SERVICES": {
+      "total": 34718416.3,
+      "avg": 76304.21,
+      "num_offices": 455
+    },
+    "PERSONNEL COMPENSATION": {
+      "total": 586167161.7,
+      "avg": 1277052.64,
+      "num_offices": 459
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 71967595.67,
+      "avg": 157134.49,
+      "num_offices": 458
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 19845268.68,
+      "avg": 42862.35,
+      "num_offices": 463
+    },
+    "TRAVEL": {
+      "total": 38360758.68,
+      "avg": 85246.13,
+      "num_offices": 450
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 40820001.41,
+      "avg": 90110.38,
+      "num_offices": 453
+    },
+    "FRANKED MAIL": {
+      "total": 21904280.65,
+      "avg": 49112.74,
+      "num_offices": 446
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 14363.81,
+      "avg": 422.47,
+      "num_offices": 34
+    },
+    "PERSONNEL BENEFITS": {
+      "total": 3.4,
+      "avg": 3.4,
+      "num_offices": 1
+    }
+  },
+  "2024": {
+    "PERSONNEL COMPENSATION": {
+      "total": 622216403.96,
+      "avg": 1335228.33,
+      "num_offices": 466
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 45384770.02,
+      "avg": 98023.26,
+      "num_offices": 463
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 39726686.97,
+      "avg": 84705.09,
+      "num_offices": 469
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 22227734.7,
+      "avg": 47495.16,
+      "num_offices": 468
+    },
+    "TRAVEL": {
+      "total": 37273212.42,
+      "avg": 82280.82,
+      "num_offices": 453
+    },
+    "EQUIPMENT": {
+      "total": 8882006.9,
+      "avg": 19435.46,
+      "num_offices": 457
+    },
+    "OTHER SERVICES": {
+      "total": 12267732.94,
+      "avg": 26785.44,
+      "num_offices": 458
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 28113.65,
+      "avg": 759.83,
+      "num_offices": 37
+    },
+    "FRANKED MAIL": {
+      "total": 22596591.23,
+      "avg": 49992.46,
+      "num_offices": 452
+    },
+    "INSURANCE CLAIMS & INDEMNITIES": {
+      "total": 40.0,
+      "avg": 40.0,
+      "num_offices": 1
+    }
+  },
+  "2025": {
+    "EQUIPMENT": {
+      "total": 3821009.6,
+      "avg": 8416.32,
+      "num_offices": 454
+    },
+    "PERSONNEL COMPENSATION": {
+      "total": 605054042.98,
+      "avg": 1312481.66,
+      "num_offices": 461
+    },
+    "PRINTING AND REPRODUCTION": {
+      "total": 19242773.2,
+      "avg": 42199.06,
+      "num_offices": 456
+    },
+    "RENT  COMMUNICATION  UTILITIES": {
+      "total": 53407099.54,
+      "avg": 115599.78,
+      "num_offices": 462
+    },
+    "SUPPLIES AND MATERIALS": {
+      "total": 13831774.5,
+      "avg": 29874.24,
+      "num_offices": 463
+    },
+    "OTHER SERVICES": {
+      "total": 21631813.14,
+      "avg": 47334.38,
+      "num_offices": 457
+    },
+    "TRAVEL": {
+      "total": 33015354.08,
+      "avg": 74191.81,
+      "num_offices": 445
+    },
+    "FRANKED MAIL": {
+      "total": 7519403.55,
+      "avg": 16784.38,
+      "num_offices": 448
+    },
+    "TRANSPORTATION OF THINGS": {
+      "total": 9499.52,
+      "avg": 327.57,
+      "num_offices": 29
+    }
+  }
+}

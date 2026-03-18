@@ -1,0 +1,67 @@
+[
+  {
+    "category": "PERSONNEL COMPENSATION",
+    "total": 12946959202.95,
+    "transactions": 1042224
+  },
+  {
+    "category": "PERSONNEL BENEFITS",
+    "total": 4793971840.12,
+    "transactions": 465069
+  },
+  {
+    "category": "OTHER SERVICES",
+    "total": 1574060734.02,
+    "transactions": 400518
+  },
+  {
+    "category": "EQUIPMENT",
+    "total": 997486185.67,
+    "transactions": 235927
+  },
+  {
+    "category": "RENT  COMMUNICATION  UTILITIES",
+    "total": 711073964.09,
+    "transactions": 764934
+  },
+  {
+    "category": "SUPPLIES AND MATERIALS",
+    "total": 602914250.08,
+    "transactions": 1366899
+  },
+  {
+    "category": "TRAVEL",
+    "total": 462916159.8,
+    "transactions": 1672519
+  },
+  {
+    "category": "RENT, COMMUNICATION, UTILITIES",
+    "total": 461023280.17,
+    "transactions": 641316
+  },
+  {
+    "category": "PRINTING AND REPRODUCTION",
+    "total": 393050788.85,
+    "transactions": 266826
+  },
+  {
+    "category": "FRANKED MAIL",
+    "total": 277271095.93,
+    "transactions": 177046
+  },
+  {
+    "category": "BENEFITS TO FORMER PERSONNEL",
+    "total": 20918769.55,
+    "transactions": 267
+  },
+  {
+    "category": "TRANSPORTATION OF THINGS",
+    "total": 1854603.34,
+    "transactions": 2046
+  },
+  {
+    "category": "INSURANCE CLAIMS & INDEMNITIES",
+    "total": 913591.73,
+    "transactions": 43
+  }
+]
